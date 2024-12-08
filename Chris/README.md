@@ -2,7 +2,7 @@
 
 # Census Inequality - Analyzing and Modeling Census Income
 
-![alt text](Income-by-remmachenasreddine-580x386.jpg)
+![alt text](../Visualizations/Income-by-remmachenasreddine-580x386.png)
 
 ##  Objective
 
