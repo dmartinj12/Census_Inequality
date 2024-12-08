@@ -58,7 +58,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 209,38,Private,9,Divorced,Craft-repair,Not-in-family,White,Male,40,<=50K,Nevada,<=50K,RandomForest
 212,42,Private,4,Never-married,Handlers-cleaners,Not-in-family,Black,Male,40,<=50K,Oklahoma,<=50K,RandomForest
 215,64,Private,7,Married-civ-spouse,Craft-repair,Husband,White,Male,40,<=50K,South Carolina,<=50K,RandomForest
-217,41,Self-emp-inc,11,Married-civ-spouse,Sales,Husband,Other,Male,84,<=50K,West Virginia,<=50K,RandomForest
+217,41,Self-emp-inc,11,Married-civ-spouse,Sales,Husband,Other,Male,84,<=50K,West Virginia,>50K,RandomForest
 228,41,Self-emp-not-inc,9,Married-civ-spouse,Handlers-cleaners,Husband,White,Male,40,<=50K,New Mexico,<=50K,RandomForest
 235,65,Federal-gov,10,Married-civ-spouse,Exec-managerial,Husband,Black,Male,40,>50K,Colorado,<=50K,RandomForest
 238,68,Self-emp-not-inc,11,Married-civ-spouse,Prof-specialty,Husband,White,Male,40,<=50K,North Carolina,<=50K,RandomForest
@@ -111,7 +111,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 412,55,Private,11,Married-civ-spouse,Prof-specialty,Husband,White,Male,50,>50K,Washington,>50K,RandomForest
 413,47,Local-gov,14,Married-civ-spouse,Exec-managerial,Husband,Black,Male,50,>50K,New Mexico,>50K,RandomForest
 418,46,Private,10,Married-civ-spouse,Prof-specialty,Husband,White,Male,50,>50K,Virginia,>50K,RandomForest
-426,43,Private,9,Married-civ-spouse,Machine-op-inspct,Husband,White,Male,52,>50K,Louisiana,>50K,RandomForest
+426,43,Private,9,Married-civ-spouse,Machine-op-inspct,Husband,White,Male,52,>50K,Louisiana,<=50K,RandomForest
 428,50,Private,14,Married-civ-spouse,Prof-specialty,Husband,White,Male,40,>50K,Ohio,>50K,RandomForest
 432,27,Private,13,Married-civ-spouse,Exec-managerial,Husband,White,Male,50,>50K,Wyoming,>50K,RandomForest
 436,28,Private,13,Married-civ-spouse,Prof-specialty,Wife,White,Female,24,>50K,Virginia,>50K,RandomForest
@@ -154,7 +154,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 576,28,Local-gov,14,Married-civ-spouse,Prof-specialty,Wife,White,Female,55,<=50K,Iowa,>50K,RandomForest
 579,38,Private,12,Married-civ-spouse,Exec-managerial,Wife,White,Female,40,>50K,Maine,>50K,RandomForest
 581,55,Private,10,Married-civ-spouse,Exec-managerial,Husband,White,Male,40,>50K,Arizona,>50K,RandomForest
-584,46,Private,9,Married-civ-spouse,Transport-moving,Husband,White,Male,70,>50K,Maryland,<=50K,RandomForest
+584,46,Private,9,Married-civ-spouse,Transport-moving,Husband,White,Male,70,>50K,Maryland,>50K,RandomForest
 585,33,Private,14,Married-civ-spouse,Exec-managerial,Husband,White,Male,45,>50K,Kansas,>50K,RandomForest
 587,31,Private,13,Married-civ-spouse,Exec-managerial,Wife,White,Female,35,>50K,New York,>50K,RandomForest
 588,59,Self-emp-not-inc,9,Married-civ-spouse,Exec-managerial,Husband,White,Male,52,>50K,Wisconsin,<=50K,RandomForest
@@ -200,12 +200,12 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 787,51,State-gov,10,Married-civ-spouse,Sales,Husband,White,Male,40,>50K,Colorado,<=50K,RandomForest
 792,47,Local-gov,10,Married-civ-spouse,Transport-moving,Husband,White,Male,40,>50K,Montana,<=50K,RandomForest
 793,52,State-gov,16,Married-civ-spouse,Prof-specialty,Husband,White,Male,70,>50K,Florida,>50K,RandomForest
-795,27,Private,13,Married-civ-spouse,Machine-op-inspct,Husband,White,Male,60,>50K,Connecticut,>50K,RandomForest
+795,27,Private,13,Married-civ-spouse,Machine-op-inspct,Husband,White,Male,60,>50K,Connecticut,<=50K,RandomForest
 797,41,Self-emp-inc,9,Married-civ-spouse,Sales,Husband,White,Male,55,>50K,Louisiana,>50K,RandomForest
-802,46,Private,10,Married-civ-spouse,Sales,Husband,White,Male,40,>50K,Washington,>50K,RandomForest
+802,46,Private,10,Married-civ-spouse,Sales,Husband,White,Male,40,>50K,Washington,<=50K,RandomForest
 809,57,Private,13,Married-civ-spouse,Sales,Husband,White,Male,55,>50K,New Jersey,>50K,RandomForest
 814,36,Private,9,Married-civ-spouse,Craft-repair,Husband,White,Male,60,>50K,Minnesota,>50K,RandomForest
-816,35,Private,9,Married-civ-spouse,Adm-clerical,Wife,White,Female,42,>50K,Pennsylvania,<=50K,RandomForest
+816,35,Private,9,Married-civ-spouse,Adm-clerical,Wife,White,Female,42,>50K,Pennsylvania,>50K,RandomForest
 818,55,Private,9,Married-civ-spouse,Handlers-cleaners,Husband,White,Male,40,>50K,Montana,>50K,RandomForest
 819,29,Private,9,Married-civ-spouse,Machine-op-inspct,Husband,White,Male,30,>50K,Maryland,<=50K,RandomForest
 827,35,Private,14,Married-civ-spouse,Prof-specialty,Husband,White,Male,40,>50K,Oregon,>50K,RandomForest
@@ -219,7 +219,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 851,33,Local-gov,10,Married-civ-spouse,Protective-serv,Husband,White,Male,40,>50K,South Carolina,<=50K,RandomForest
 852,36,Private,13,Married-civ-spouse,Exec-managerial,Husband,White,Male,40,>50K,Missouri,>50K,RandomForest
 854,61,Federal-gov,10,Married-civ-spouse,Adm-clerical,Husband,White,Male,40,>50K,South Dakota,>50K,RandomForest
-859,40,Private,10,Married-civ-spouse,Craft-repair,Husband,White,Male,68,>50K,Georgia,<=50K,RandomForest
+859,40,Private,10,Married-civ-spouse,Craft-repair,Husband,White,Male,68,>50K,Georgia,>50K,RandomForest
 864,45,Private,13,Married-civ-spouse,Sales,Husband,White,Male,60,>50K,Arizona,>50K,RandomForest
 865,42,Self-emp-not-inc,13,Married-civ-spouse,Prof-specialty,Husband,White,Male,40,>50K,Maryland,>50K,RandomForest
 867,46,Private,10,Married-civ-spouse,Transport-moving,Husband,White,Male,40,>50K,Illinois,<=50K,RandomForest
@@ -227,9 +227,9 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 874,36,Private,13,Married-civ-spouse,Sales,Husband,White,Male,35,>50K,Virginia,>50K,RandomForest
 878,37,Private,10,Married-civ-spouse,Exec-managerial,Husband,Black,Male,60,>50K,Montana,>50K,RandomForest
 879,42,Private,13,Married-civ-spouse,Adm-clerical,Wife,Asian-Pac-Islander,Female,40,>50K,Arkansas,>50K,RandomForest
-883,61,Private,11,Married-civ-spouse,Craft-repair,Husband,White,Male,60,>50K,South Carolina,<=50K,RandomForest
+883,61,Private,11,Married-civ-spouse,Craft-repair,Husband,White,Male,60,>50K,South Carolina,>50K,RandomForest
 885,52,Self-emp-not-inc,9,Married-civ-spouse,Farming-fishing,Husband,White,Male,60,>50K,Nevada,>50K,RandomForest
-886,46,Local-gov,12,Married-civ-spouse,Protective-serv,Husband,White,Male,50,>50K,Ohio,>50K,RandomForest
+886,46,Local-gov,12,Married-civ-spouse,Protective-serv,Husband,White,Male,50,>50K,Ohio,<=50K,RandomForest
 890,35,Local-gov,14,Married-civ-spouse,Prof-specialty,Husband,White,Male,40,>50K,South Carolina,>50K,RandomForest
 893,47,Local-gov,14,Married-civ-spouse,Prof-specialty,Husband,White,Male,50,>50K,Idaho,>50K,RandomForest
 897,52,Private,9,Never-married,Sales,Not-in-family,White,Male,50,<=50K,Virginia,<=50K,RandomForest
@@ -248,7 +248,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 951,30,Private,9,Married-civ-spouse,Craft-repair,Husband,White,Male,40,>50K,Wisconsin,<=50K,RandomForest
 957,38,Private,13,Married-civ-spouse,Exec-managerial,Husband,White,Male,54,>50K,New Hampshire,>50K,RandomForest
 961,58,Private,12,Married-civ-spouse,Machine-op-inspct,Husband,Black,Male,40,>50K,Pennsylvania,<=50K,RandomForest
-964,46,Federal-gov,11,Married-civ-spouse,Tech-support,Husband,White,Male,40,>50K,Illinois,>50K,RandomForest
+964,46,Federal-gov,11,Married-civ-spouse,Tech-support,Husband,White,Male,40,>50K,Illinois,<=50K,RandomForest
 966,41,Federal-gov,14,Married-civ-spouse,Exec-managerial,Husband,White,Male,40,>50K,New Jersey,>50K,RandomForest
 968,33,Federal-gov,16,Married-civ-spouse,Prof-specialty,Husband,White,Male,40,>50K,Montana,>50K,RandomForest
 969,63,Private,13,Married-civ-spouse,Sales,Husband,White,Male,40,>50K,Tennessee,>50K,RandomForest
@@ -277,7 +277,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 1048,33,Self-emp-not-inc,10,Married-civ-spouse,Sales,Husband,White,Male,50,<=50K,New Mexico,<=50K,RandomForest
 1054,53,Private,10,Married-civ-spouse,Exec-managerial,Husband,White,Male,40,<=50K,Wisconsin,<=50K,RandomForest
 1055,37,Private,12,Married-civ-spouse,Prof-specialty,Husband,White,Male,45,<=50K,Ohio,>50K,RandomForest
-1057,32,Private,10,Married-civ-spouse,Adm-clerical,Wife,Other,Female,40,<=50K,Tennessee,<=50K,RandomForest
+1057,32,Private,10,Married-civ-spouse,Adm-clerical,Wife,Other,Female,40,<=50K,Tennessee,>50K,RandomForest
 1058,38,Local-gov,13,Married-civ-spouse,Craft-repair,Husband,White,Male,40,<=50K,Vermont,<=50K,RandomForest
 1059,52,Private,10,Married-civ-spouse,Exec-managerial,Husband,White,Male,60,<=50K,Nevada,>50K,RandomForest
 1061,46,Private,14,Married-civ-spouse,Adm-clerical,Husband,White,Male,60,<=50K,Illinois,>50K,RandomForest
@@ -392,7 +392,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 1513,49,Local-gov,14,Widowed,Prof-specialty,Unmarried,White,Female,20,<=50K,Mississippi,<=50K,RandomForest
 1516,40,Private,10,Divorced,Tech-support,Unmarried,White,Female,40,<=50K,Louisiana,<=50K,RandomForest
 1518,28,Private,6,Never-married,Machine-op-inspct,Not-in-family,White,Female,40,<=50K,Illinois,<=50K,RandomForest
-1520,52,Private,9,Married-civ-spouse,Exec-managerial,Husband,Asian-Pac-Islander,Male,40,>50K,California,>50K,RandomForest
+1520,52,Private,9,Married-civ-spouse,Exec-managerial,Husband,Asian-Pac-Islander,Male,40,>50K,California,<=50K,RandomForest
 1521,53,Self-emp-inc,9,Married-civ-spouse,Sales,Husband,White,Male,40,>50K,Rhode Island,>50K,RandomForest
 1525,49,Private,13,Married-civ-spouse,Prof-specialty,Wife,White,Female,20,>50K,Louisiana,>50K,RandomForest
 1526,50,Private,10,Married-civ-spouse,Exec-managerial,Husband,White,Male,50,>50K,Rhode Island,>50K,RandomForest
@@ -443,7 +443,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 1686,35,Private,13,Divorced,Exec-managerial,Not-in-family,White,Male,50,>50K,Nevada,<=50K,RandomForest
 1687,47,Self-emp-inc,15,Divorced,Prof-specialty,Not-in-family,White,Male,50,>50K,Pennsylvania,>50K,RandomForest
 1689,34,Private,13,Never-married,Sales,Not-in-family,White,Male,40,>50K,California,<=50K,RandomForest
-1694,42,Private,16,Married-spouse-absent,Other-service,Not-in-family,White,Male,60,>50K,Hawaii,>50K,RandomForest
+1694,42,Private,16,Married-spouse-absent,Other-service,Not-in-family,White,Male,60,>50K,Hawaii,<=50K,RandomForest
 1697,36,Private,15,Never-married,Exec-managerial,Not-in-family,White,Male,50,>50K,Colorado,>50K,RandomForest
 1700,49,Private,13,Divorced,Exec-managerial,Not-in-family,Black,Female,60,>50K,Iowa,>50K,RandomForest
 1701,37,Private,9,Never-married,Craft-repair,Other-relative,Amer-Indian-Eskimo,Male,48,>50K,Idaho,<=50K,RandomForest
@@ -663,7 +663,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 2552,40,Private,13,Married-civ-spouse,Other-service,Wife,Asian-Pac-Islander,Female,52,>50K,New York,>50K,RandomForest
 2554,54,Private,9,Married-civ-spouse,Craft-repair,Husband,White,Male,40,>50K,Alaska,>50K,RandomForest
 2555,41,Private,13,Married-civ-spouse,Prof-specialty,Wife,White,Female,10,>50K,Washington,>50K,RandomForest
-2557,41,Private,9,Married-civ-spouse,Prof-specialty,Husband,White,Male,43,>50K,Pennsylvania,>50K,RandomForest
+2557,41,Private,9,Married-civ-spouse,Prof-specialty,Husband,White,Male,43,>50K,Pennsylvania,<=50K,RandomForest
 2560,55,Private,9,Married-civ-spouse,Craft-repair,Husband,White,Male,40,>50K,Arkansas,<=50K,RandomForest
 2565,28,Local-gov,14,Married-civ-spouse,Prof-specialty,Wife,White,Female,35,>50K,Nebraska,>50K,RandomForest
 2567,32,Self-emp-inc,13,Married-civ-spouse,Sales,Husband,White,Male,55,>50K,Wisconsin,<=50K,RandomForest
@@ -701,7 +701,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 2671,42,Self-emp-not-inc,15,Divorced,Prof-specialty,Unmarried,White,Male,40,>50K,Minnesota,>50K,RandomForest
 2673,36,Private,13,Married-civ-spouse,Other-service,Husband,Black,Male,36,>50K,Georgia,<=50K,RandomForest
 2683,35,Private,16,Married-civ-spouse,Prof-specialty,Husband,White,Male,40,>50K,Idaho,>50K,RandomForest
-2701,39,Private,9,Married-civ-spouse,Transport-moving,Husband,White,Male,48,>50K,Montana,<=50K,RandomForest
+2701,39,Private,9,Married-civ-spouse,Transport-moving,Husband,White,Male,48,>50K,Montana,>50K,RandomForest
 2704,38,Private,10,Married-civ-spouse,Transport-moving,Husband,White,Male,50,>50K,Arkansas,>50K,RandomForest
 2710,49,Local-gov,10,Married-civ-spouse,Handlers-cleaners,Husband,White,Male,40,>50K,Indiana,<=50K,RandomForest
 2714,53,Private,14,Married-civ-spouse,Sales,Husband,White,Male,60,>50K,Maryland,>50K,RandomForest
@@ -722,7 +722,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 2791,42,Private,11,Married-civ-spouse,Exec-managerial,Wife,White,Female,35,>50K,Illinois,>50K,RandomForest
 2805,62,Private,11,Married-civ-spouse,Prof-specialty,Husband,White,Male,50,>50K,Colorado,>50K,RandomForest
 2807,46,State-gov,9,Married-civ-spouse,Other-service,Husband,Black,Male,40,>50K,Mississippi,<=50K,RandomForest
-2811,31,Private,9,Married-civ-spouse,Craft-repair,Husband,White,Male,40,>50K,Iowa,<=50K,RandomForest
+2811,31,Private,9,Married-civ-spouse,Craft-repair,Husband,White,Male,40,>50K,Iowa,>50K,RandomForest
 2815,30,Federal-gov,10,Married-civ-spouse,Adm-clerical,Husband,White,Male,48,>50K,Montana,<=50K,RandomForest
 2818,38,Self-emp-not-inc,13,Married-civ-spouse,Sales,Husband,White,Male,50,>50K,Alabama,>50K,RandomForest
 2820,45,Private,9,Married-civ-spouse,Adm-clerical,Husband,Black,Male,40,>50K,Iowa,<=50K,RandomForest
@@ -807,7 +807,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 3096,58,Private,6,Married-civ-spouse,Craft-repair,Husband,White,Male,40,>50K,New York,<=50K,RandomForest
 3102,47,Private,11,Married-civ-spouse,Craft-repair,Husband,White,Male,40,<=50K,Washington,>50K,RandomForest
 3104,36,Private,13,Married-civ-spouse,Exec-managerial,Husband,White,Male,50,<=50K,Washington,>50K,RandomForest
-3105,26,Private,14,Married-civ-spouse,Prof-specialty,Husband,White,Male,40,<=50K,Missouri,<=50K,RandomForest
+3105,26,Private,14,Married-civ-spouse,Prof-specialty,Husband,White,Male,40,<=50K,Missouri,>50K,RandomForest
 3110,30,Private,9,Married-civ-spouse,Craft-repair,Husband,White,Male,40,<=50K,Utah,<=50K,RandomForest
 3113,30,Private,9,Married-civ-spouse,Transport-moving,Husband,White,Male,40,<=50K,Wisconsin,<=50K,RandomForest
 3114,35,Private,10,Married-civ-spouse,Craft-repair,Husband,White,Male,40,<=50K,Massachusetts,>50K,RandomForest
@@ -852,7 +852,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 3267,21,Self-emp-not-inc,8,Married-civ-spouse,Adm-clerical,Wife,White,Female,30,<=50K,Louisiana,<=50K,RandomForest
 3270,38,Private,13,Married-civ-spouse,Transport-moving,Husband,White,Male,40,<=50K,New York,<=50K,RandomForest
 3271,27,Private,9,Never-married,Adm-clerical,Not-in-family,White,Male,40,<=50K,West Virginia,<=50K,RandomForest
-3278,56,Private,10,Widowed,Exec-managerial,Not-in-family,White,Male,60,<=50K,Vermont,>50K,RandomForest
+3278,56,Private,10,Widowed,Exec-managerial,Not-in-family,White,Male,60,<=50K,Vermont,<=50K,RandomForest
 3281,25,Private,9,Never-married,Adm-clerical,Own-child,Black,Female,40,<=50K,Arkansas,<=50K,RandomForest
 3286,53,Private,10,Married-civ-spouse,Adm-clerical,Wife,White,Female,40,>50K,Nebraska,>50K,RandomForest
 3292,46,Private,9,Married-civ-spouse,Machine-op-inspct,Husband,Black,Male,40,>50K,Michigan,<=50K,RandomForest
@@ -875,7 +875,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 3379,63,Private,9,Married-civ-spouse,Sales,Husband,White,Male,40,<=50K,Illinois,<=50K,RandomForest
 3382,35,Private,10,Married-civ-spouse,Craft-repair,Husband,White,Male,35,<=50K,Wisconsin,<=50K,RandomForest
 3383,38,Federal-gov,13,Married-civ-spouse,Prof-specialty,Husband,White,Male,40,<=50K,Indiana,>50K,RandomForest
-3387,54,Private,9,Married-civ-spouse,Sales,Husband,White,Male,55,<=50K,West Virginia,<=50K,RandomForest
+3387,54,Private,9,Married-civ-spouse,Sales,Husband,White,Male,55,<=50K,West Virginia,>50K,RandomForest
 3393,50,Local-gov,10,Married-civ-spouse,Craft-repair,Husband,White,Male,55,<=50K,Oklahoma,<=50K,RandomForest
 3394,46,Private,9,Married-civ-spouse,Craft-repair,Husband,Black,Male,40,<=50K,Nebraska,<=50K,RandomForest
 3395,27,Federal-gov,12,Married-civ-spouse,Adm-clerical,Husband,White,Male,40,<=50K,Arizona,>50K,RandomForest
@@ -1198,7 +1198,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 4756,60,Private,4,Divorced,Other-service,Not-in-family,White,Female,40,<=50K,Florida,<=50K,RandomForest
 4764,24,Private,9,Never-married,Craft-repair,Not-in-family,White,Male,40,<=50K,Massachusetts,<=50K,RandomForest
 4773,65,Private,5,Widowed,Priv-house-serv,Unmarried,Black,Female,24,<=50K,Nebraska,<=50K,RandomForest
-4774,29,Private,11,Married-civ-spouse,Transport-moving,Husband,White,Male,55,<=50K,Michigan,>50K,RandomForest
+4774,29,Private,11,Married-civ-spouse,Transport-moving,Husband,White,Male,55,<=50K,Michigan,<=50K,RandomForest
 4775,47,Private,5,Married-spouse-absent,Handlers-cleaners,Unmarried,White,Male,40,<=50K,Louisiana,<=50K,RandomForest
 4776,30,Private,9,Never-married,Farming-fishing,Own-child,Black,Male,60,<=50K,Georgia,<=50K,RandomForest
 4781,47,Self-emp-not-inc,10,Never-married,Other-service,Unmarried,Black,Female,40,<=50K,Kentucky,<=50K,RandomForest
@@ -1210,7 +1210,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 4812,48,Federal-gov,10,Divorced,Exec-managerial,Not-in-family,White,Male,40,<=50K,Michigan,<=50K,RandomForest
 4818,32,Private,10,Married-civ-spouse,Adm-clerical,Husband,White,Male,40,<=50K,Alaska,<=50K,RandomForest
 4822,37,Private,11,Married-civ-spouse,Craft-repair,Husband,White,Male,40,>50K,Maryland,<=50K,RandomForest
-4831,54,Local-gov,10,Married-civ-spouse,Farming-fishing,Husband,White,Male,40,<=50K,Virginia,<=50K,RandomForest
+4831,54,Local-gov,10,Married-civ-spouse,Farming-fishing,Husband,White,Male,40,<=50K,Virginia,>50K,RandomForest
 4834,20,Private,10,Never-married,Prof-specialty,Own-child,White,Male,20,<=50K,Maryland,<=50K,RandomForest
 4837,35,Private,14,Never-married,Prof-specialty,Not-in-family,White,Male,60,>50K,Michigan,<=50K,RandomForest
 4842,31,Self-emp-not-inc,10,Married-civ-spouse,Craft-repair,Husband,White,Male,40,<=50K,Tennessee,<=50K,RandomForest
@@ -1461,7 +1461,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 5853,55,Self-emp-not-inc,10,Married-civ-spouse,Farming-fishing,Husband,White,Male,99,>50K,New York,<=50K,RandomForest
 5854,22,Self-emp-not-inc,9,Never-married,Other-service,Own-child,White,Male,40,<=50K,Maine,<=50K,RandomForest
 5857,62,Private,10,Widowed,Exec-managerial,Not-in-family,White,Female,16,<=50K,New Mexico,<=50K,RandomForest
-5859,34,Private,14,Married-civ-spouse,Prof-specialty,Husband,White,Male,55,>50K,Idaho,>50K,RandomForest
+5859,34,Private,14,Married-civ-spouse,Prof-specialty,Husband,White,Male,55,>50K,Idaho,<=50K,RandomForest
 5862,45,Private,13,Married-civ-spouse,Sales,Husband,White,Male,55,<=50K,Illinois,<=50K,RandomForest
 5871,26,Self-emp-not-inc,14,Never-married,Prof-specialty,Not-in-family,White,Female,50,<=50K,Oklahoma,<=50K,RandomForest
 5875,39,Private,9,Never-married,Machine-op-inspct,Unmarried,White,Male,48,<=50K,Washington,<=50K,RandomForest
@@ -1596,7 +1596,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 6382,32,Private,10,Married-civ-spouse,Exec-managerial,Husband,White,Male,60,>50K,Wyoming,<=50K,RandomForest
 6386,60,Private,3,Divorced,Machine-op-inspct,Not-in-family,White,Female,40,<=50K,Washington,<=50K,RandomForest
 6392,34,Self-emp-not-inc,9,Never-married,Craft-repair,Not-in-family,White,Male,45,>50K,Kansas,<=50K,RandomForest
-6393,31,Private,12,Married-civ-spouse,Craft-repair,Not-in-family,Asian-Pac-Islander,Male,50,>50K,Oregon,>50K,RandomForest
+6393,31,Private,12,Married-civ-spouse,Craft-repair,Not-in-family,Asian-Pac-Islander,Male,50,>50K,Oregon,<=50K,RandomForest
 6394,42,Private,9,Divorced,Protective-serv,Not-in-family,Black,Male,35,<=50K,South Dakota,<=50K,RandomForest
 6399,25,Private,8,Married-civ-spouse,Other-service,Wife,White,Female,40,<=50K,New Jersey,<=50K,RandomForest
 6410,49,Federal-gov,14,Never-married,Exec-managerial,Not-in-family,White,Male,56,>50K,Rhode Island,>50K,RandomForest
@@ -1757,7 +1757,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 7094,26,Private,9,Married-civ-spouse,Farming-fishing,Husband,White,Male,55,<=50K,Washington,<=50K,RandomForest
 7099,26,Private,10,Married-civ-spouse,Exec-managerial,Husband,White,Male,60,<=50K,Oklahoma,<=50K,RandomForest
 7100,46,Private,10,Never-married,Adm-clerical,Own-child,White,Female,40,<=50K,Oklahoma,<=50K,RandomForest
-7101,37,Private,12,Married-civ-spouse,Tech-support,Husband,White,Male,50,>50K,Tennessee,>50K,RandomForest
+7101,37,Private,12,Married-civ-spouse,Tech-support,Husband,White,Male,50,>50K,Tennessee,<=50K,RandomForest
 7110,26,Private,9,Never-married,Tech-support,Other-relative,White,Male,40,<=50K,Missouri,<=50K,RandomForest
 7114,53,Private,9,Divorced,Machine-op-inspct,Not-in-family,White,Female,40,<=50K,Alaska,<=50K,RandomForest
 7120,57,Local-gov,9,Divorced,Adm-clerical,Unmarried,White,Female,62,<=50K,Virginia,<=50K,RandomForest
@@ -1803,7 +1803,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 7245,55,Private,13,Married-civ-spouse,Exec-managerial,Husband,White,Male,40,>50K,Rhode Island,>50K,RandomForest
 7247,44,Private,9,Never-married,Machine-op-inspct,Not-in-family,White,Female,40,<=50K,Florida,<=50K,RandomForest
 7250,30,Private,11,Married-civ-spouse,Prof-specialty,Husband,White,Male,40,<=50K,Alaska,<=50K,RandomForest
-7255,35,Self-emp-not-inc,10,Married-civ-spouse,Craft-repair,Husband,White,Male,60,>50K,Illinois,<=50K,RandomForest
+7255,35,Self-emp-not-inc,10,Married-civ-spouse,Craft-repair,Husband,White,Male,60,>50K,Illinois,>50K,RandomForest
 7256,20,Private,9,Married-civ-spouse,Handlers-cleaners,Husband,White,Male,50,<=50K,New Hampshire,<=50K,RandomForest
 7258,31,Private,13,Never-married,Prof-specialty,Unmarried,White,Female,36,<=50K,Georgia,<=50K,RandomForest
 7260,32,Self-emp-not-inc,16,Married-civ-spouse,Exec-managerial,Husband,White,Male,40,<=50K,Maryland,>50K,RandomForest
@@ -1932,7 +1932,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 7791,38,State-gov,10,Divorced,Protective-serv,Unmarried,Amer-Indian-Eskimo,Female,40,>50K,Texas,<=50K,RandomForest
 7792,22,Private,11,Never-married,Other-service,Not-in-family,White,Female,30,<=50K,Vermont,<=50K,RandomForest
 7798,44,Private,10,Married-civ-spouse,Machine-op-inspct,Husband,White,Male,40,<=50K,Delaware,<=50K,RandomForest
-7802,56,Self-emp-not-inc,9,Married-civ-spouse,Exec-managerial,Husband,Black,Male,45,<=50K,Alaska,>50K,RandomForest
+7802,56,Self-emp-not-inc,9,Married-civ-spouse,Exec-managerial,Husband,Black,Male,45,<=50K,Alaska,<=50K,RandomForest
 7804,20,Private,10,Never-married,Other-service,Not-in-family,White,Female,20,<=50K,Montana,<=50K,RandomForest
 7805,24,Private,3,Never-married,Craft-repair,Unmarried,White,Male,40,<=50K,Maine,<=50K,RandomForest
 7810,44,Private,13,Married-civ-spouse,Exec-managerial,Husband,White,Male,50,<=50K,Wisconsin,>50K,RandomForest
@@ -2025,7 +2025,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 8225,30,Private,9,Married-civ-spouse,Craft-repair,Husband,Asian-Pac-Islander,Male,40,<=50K,Connecticut,<=50K,RandomForest
 8226,41,Private,9,Married-civ-spouse,Sales,Husband,Amer-Indian-Eskimo,Male,50,<=50K,Alabama,>50K,RandomForest
 8229,42,Self-emp-not-inc,9,Married-civ-spouse,Farming-fishing,Husband,White,Male,50,<=50K,Kentucky,<=50K,RandomForest
-8232,27,Private,13,Married-civ-spouse,Exec-managerial,Husband,White,Male,40,>50K,Ohio,<=50K,RandomForest
+8232,27,Private,13,Married-civ-spouse,Exec-managerial,Husband,White,Male,40,>50K,Ohio,>50K,RandomForest
 8234,40,Private,14,Never-married,Exec-managerial,Not-in-family,White,Male,40,<=50K,New Hampshire,<=50K,RandomForest
 8239,24,Self-emp-not-inc,10,Separated,Handlers-cleaners,Own-child,White,Male,45,<=50K,North Carolina,<=50K,RandomForest
 8272,17,Private,7,Never-married,Farming-fishing,Own-child,White,Male,45,<=50K,Alaska,<=50K,RandomForest
@@ -2300,7 +2300,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 9319,20,Private,9,Never-married,Adm-clerical,Own-child,White,Female,40,<=50K,Connecticut,<=50K,RandomForest
 9320,27,Private,9,Married-civ-spouse,Handlers-cleaners,Husband,White,Male,40,<=50K,South Dakota,<=50K,RandomForest
 9323,64,Private,14,Never-married,Prof-specialty,Not-in-family,White,Female,35,<=50K,Colorado,<=50K,RandomForest
-9330,34,State-gov,13,Married-civ-spouse,Prof-specialty,Husband,White,Male,38,>50K,Delaware,<=50K,RandomForest
+9330,34,State-gov,13,Married-civ-spouse,Prof-specialty,Husband,White,Male,38,>50K,Delaware,>50K,RandomForest
 9331,41,Local-gov,4,Never-married,Other-service,Unmarried,Black,Female,40,<=50K,Utah,<=50K,RandomForest
 9335,19,Private,9,Never-married,Craft-repair,Own-child,White,Male,40,<=50K,North Dakota,<=50K,RandomForest
 9338,58,Self-emp-not-inc,6,Never-married,Craft-repair,Not-in-family,White,Male,40,<=50K,South Carolina,<=50K,RandomForest
@@ -2569,7 +2569,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 10615,44,Self-emp-not-inc,15,Married-civ-spouse,Prof-specialty,Husband,White,Male,70,>50K,New York,>50K,RandomForest
 10617,34,Self-emp-not-inc,10,Married-civ-spouse,Craft-repair,Husband,White,Male,55,>50K,Wisconsin,<=50K,RandomForest
 10620,37,Private,10,Married-civ-spouse,Craft-repair,Husband,White,Male,50,>50K,Ohio,<=50K,RandomForest
-10622,46,Private,10,Married-civ-spouse,Machine-op-inspct,Husband,Black,Male,40,<=50K,Idaho,>50K,RandomForest
+10622,46,Private,10,Married-civ-spouse,Machine-op-inspct,Husband,Black,Male,40,<=50K,Idaho,<=50K,RandomForest
 10629,42,Private,14,Married-civ-spouse,Prof-specialty,Husband,White,Male,50,>50K,Maine,>50K,RandomForest
 10630,60,Private,12,Married-civ-spouse,Adm-clerical,Husband,White,Male,24,<=50K,Texas,<=50K,RandomForest
 10634,29,Private,13,Never-married,Adm-clerical,Own-child,White,Female,40,<=50K,Florida,<=50K,RandomForest
@@ -2694,7 +2694,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 11161,26,Private,10,Never-married,Other-service,Other-relative,White,Male,40,<=50K,Nebraska,<=50K,RandomForest
 11162,47,Private,15,Divorced,Adm-clerical,Not-in-family,White,Male,40,<=50K,Louisiana,<=50K,RandomForest
 11167,50,Self-emp-not-inc,6,Divorced,Sales,Not-in-family,White,Female,50,<=50K,Connecticut,<=50K,RandomForest
-11170,31,Self-emp-not-inc,13,Married-civ-spouse,Adm-clerical,Wife,White,Female,20,<=50K,Oklahoma,>50K,RandomForest
+11170,31,Self-emp-not-inc,13,Married-civ-spouse,Adm-clerical,Wife,White,Female,20,<=50K,Oklahoma,<=50K,RandomForest
 11174,24,Private,10,Never-married,Exec-managerial,Own-child,White,Male,40,<=50K,Delaware,<=50K,RandomForest
 11175,55,Private,9,Divorced,Priv-house-serv,Not-in-family,White,Female,40,<=50K,Arkansas,<=50K,RandomForest
 11178,30,Private,10,Never-married,Machine-op-inspct,Not-in-family,White,Male,40,<=50K,Massachusetts,<=50K,RandomForest
@@ -2728,7 +2728,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 11300,53,Self-emp-not-inc,13,Never-married,Sales,Unmarried,White,Male,60,>50K,Florida,<=50K,RandomForest
 11303,57,Private,9,Never-married,Exec-managerial,Not-in-family,White,Female,45,<=50K,North Dakota,<=50K,RandomForest
 11306,34,Private,9,Never-married,Other-service,Own-child,White,Female,40,<=50K,Georgia,<=50K,RandomForest
-11319,41,Private,9,Married-civ-spouse,Transport-moving,Husband,White,Male,45,<=50K,Arizona,<=50K,RandomForest
+11319,41,Private,9,Married-civ-spouse,Transport-moving,Husband,White,Male,45,<=50K,Arizona,>50K,RandomForest
 11325,48,Private,13,Married-civ-spouse,Exec-managerial,Husband,Asian-Pac-Islander,Male,40,>50K,Maryland,>50K,RandomForest
 11327,35,Self-emp-not-inc,10,Married-civ-spouse,Sales,Husband,White,Male,50,<=50K,Connecticut,<=50K,RandomForest
 11330,59,Private,10,Married-civ-spouse,Exec-managerial,Husband,White,Male,40,>50K,Alaska,>50K,RandomForest
@@ -2919,7 +2919,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 12062,31,Self-emp-inc,16,Never-married,Prof-specialty,Own-child,White,Male,40,<=50K,Arkansas,<=50K,RandomForest
 12064,37,Private,9,Divorced,Handlers-cleaners,Other-relative,White,Male,40,<=50K,Mississippi,<=50K,RandomForest
 12071,20,Private,10,Never-married,Handlers-cleaners,Not-in-family,White,Male,30,<=50K,Texas,<=50K,RandomForest
-12074,30,Private,10,Married-civ-spouse,Machine-op-inspct,Husband,White,Male,40,>50K,Louisiana,>50K,RandomForest
+12074,30,Private,10,Married-civ-spouse,Machine-op-inspct,Husband,White,Male,40,>50K,Louisiana,<=50K,RandomForest
 12080,47,Private,10,Married-civ-spouse,Exec-managerial,Husband,White,Male,50,>50K,New Jersey,>50K,RandomForest
 12087,30,Private,9,Married-civ-spouse,Other-service,Husband,Black,Male,25,<=50K,Kansas,<=50K,RandomForest
 12091,28,Private,9,Never-married,Other-service,Not-in-family,Black,Female,48,<=50K,Nebraska,<=50K,RandomForest
@@ -3173,7 +3173,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 13089,20,Private,10,Never-married,Sales,Own-child,White,Female,30,<=50K,Kansas,<=50K,RandomForest
 13094,37,Private,8,Separated,Priv-house-serv,Unmarried,Black,Female,40,<=50K,North Carolina,<=50K,RandomForest
 13115,34,Private,10,Married-civ-spouse,Machine-op-inspct,Husband,White,Male,35,<=50K,Missouri,<=50K,RandomForest
-13122,42,Private,13,Married-civ-spouse,Other-service,Husband,Asian-Pac-Islander,Male,72,>50K,Rhode Island,>50K,RandomForest
+13122,42,Private,13,Married-civ-spouse,Other-service,Husband,Asian-Pac-Islander,Male,72,>50K,Rhode Island,<=50K,RandomForest
 13124,44,State-gov,13,Married-civ-spouse,Protective-serv,Husband,White,Male,44,>50K,Washington,>50K,RandomForest
 13125,34,Self-emp-not-inc,9,Married-civ-spouse,Prof-specialty,Husband,White,Male,40,>50K,Alaska,<=50K,RandomForest
 13127,39,Self-emp-not-inc,10,Never-married,Craft-repair,Not-in-family,White,Male,25,<=50K,Pennsylvania,<=50K,RandomForest
@@ -3250,7 +3250,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 13379,26,Private,9,Never-married,Exec-managerial,Not-in-family,White,Female,50,<=50K,New Hampshire,<=50K,RandomForest
 13392,25,Private,9,Married-civ-spouse,Adm-clerical,Wife,White,Female,40,<=50K,Delaware,<=50K,RandomForest
 13396,37,Private,9,Married-civ-spouse,Craft-repair,Husband,White,Male,40,<=50K,Indiana,<=50K,RandomForest
-13403,67,Local-gov,12,Married-civ-spouse,Exec-managerial,Husband,White,Male,35,<=50K,New Hampshire,<=50K,RandomForest
+13403,67,Local-gov,12,Married-civ-spouse,Exec-managerial,Husband,White,Male,35,<=50K,New Hampshire,>50K,RandomForest
 13404,60,Private,9,Widowed,Sales,Not-in-family,White,Female,50,<=50K,Virginia,<=50K,RandomForest
 13405,54,Private,9,Widowed,Sales,Unmarried,White,Female,40,<=50K,Oklahoma,<=50K,RandomForest
 13413,19,Private,10,Never-married,Exec-managerial,Not-in-family,White,Male,40,<=50K,North Dakota,<=50K,RandomForest
@@ -3378,7 +3378,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 14000,30,Private,7,Never-married,Handlers-cleaners,Own-child,White,Male,49,<=50K,Texas,<=50K,RandomForest
 14005,50,Local-gov,10,Married-civ-spouse,Farming-fishing,Husband,White,Male,40,<=50K,Hawaii,<=50K,RandomForest
 14007,32,Private,9,Divorced,Other-service,Own-child,White,Female,40,<=50K,Georgia,<=50K,RandomForest
-14008,27,Federal-gov,10,Married-civ-spouse,Tech-support,Husband,White,Male,40,>50K,Delaware,<=50K,RandomForest
+14008,27,Federal-gov,10,Married-civ-spouse,Tech-support,Husband,White,Male,40,>50K,Delaware,>50K,RandomForest
 14009,22,Private,9,Married-civ-spouse,Transport-moving,Husband,White,Male,40,<=50K,Colorado,<=50K,RandomForest
 14013,29,Private,4,Married-civ-spouse,Farming-fishing,Husband,White,Male,40,<=50K,New York,<=50K,RandomForest
 14029,38,Federal-gov,9,Married-civ-spouse,Adm-clerical,Husband,White,Male,40,<=50K,Massachusetts,>50K,RandomForest
@@ -3456,7 +3456,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 14318,36,Private,7,Separated,Machine-op-inspct,Not-in-family,Black,Male,40,<=50K,West Virginia,<=50K,RandomForest
 14321,24,Private,13,Never-married,Prof-specialty,Own-child,White,Female,8,<=50K,Vermont,<=50K,RandomForest
 14323,50,Private,9,Divorced,Sales,Unmarried,White,Female,45,<=50K,Maine,<=50K,RandomForest
-14326,36,Private,13,Never-married,Sales,Not-in-family,Black,Male,48,<=50K,Florida,<=50K,RandomForest
+14326,36,Private,13,Never-married,Sales,Not-in-family,Black,Male,48,<=50K,Florida,>50K,RandomForest
 14331,52,Private,10,Married-civ-spouse,Exec-managerial,Husband,White,Male,45,>50K,Massachusetts,>50K,RandomForest
 14339,49,Local-gov,14,Married-civ-spouse,Adm-clerical,Husband,White,Male,40,<=50K,Michigan,>50K,RandomForest
 14344,31,Private,5,Never-married,Farming-fishing,Not-in-family,White,Male,40,<=50K,Oregon,<=50K,RandomForest
@@ -3518,7 +3518,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 14571,41,Private,10,Separated,Exec-managerial,Not-in-family,Black,Female,40,<=50K,Colorado,<=50K,RandomForest
 14576,24,Private,9,Never-married,Other-service,Own-child,White,Female,30,<=50K,Nevada,<=50K,RandomForest
 14578,32,Private,8,Divorced,Protective-serv,Own-child,White,Male,54,<=50K,Oklahoma,<=50K,RandomForest
-14579,40,Private,9,Married-civ-spouse,Machine-op-inspct,Husband,White,Male,50,<=50K,Tennessee,<=50K,RandomForest
+14579,40,Private,9,Married-civ-spouse,Machine-op-inspct,Husband,White,Male,50,<=50K,Tennessee,>50K,RandomForest
 14582,54,Private,9,Divorced,Transport-moving,Not-in-family,White,Male,45,<=50K,Alabama,<=50K,RandomForest
 14587,45,Private,9,Married-civ-spouse,Craft-repair,Husband,White,Male,40,<=50K,Wisconsin,<=50K,RandomForest
 14590,39,Private,13,Married-civ-spouse,Prof-specialty,Not-in-family,White,Male,60,<=50K,Indiana,<=50K,RandomForest
@@ -3695,7 +3695,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 15291,20,Private,10,Never-married,Sales,Not-in-family,White,Female,35,<=50K,Indiana,<=50K,RandomForest
 15305,21,Private,9,Never-married,Craft-repair,Not-in-family,White,Male,35,<=50K,Delaware,<=50K,RandomForest
 15309,55,Private,9,Divorced,Other-service,Not-in-family,White,Male,40,<=50K,Oregon,<=50K,RandomForest
-15316,46,State-gov,12,Married-civ-spouse,Tech-support,Husband,White,Male,38,>50K,Ohio,>50K,RandomForest
+15316,46,State-gov,12,Married-civ-spouse,Tech-support,Husband,White,Male,38,>50K,Ohio,<=50K,RandomForest
 15317,34,Private,9,Never-married,Machine-op-inspct,Unmarried,White,Male,40,<=50K,Kansas,<=50K,RandomForest
 15321,65,Private,13,Married-civ-spouse,Craft-repair,Husband,White,Male,40,>50K,Ohio,<=50K,RandomForest
 15324,22,Private,10,Never-married,Sales,Not-in-family,White,Male,40,<=50K,Nebraska,<=50K,RandomForest
@@ -3775,7 +3775,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 15677,53,Private,4,Married-civ-spouse,Farming-fishing,Husband,White,Male,45,<=50K,Michigan,<=50K,RandomForest
 15678,54,Self-emp-not-inc,14,Divorced,Prof-specialty,Not-in-family,White,Male,50,>50K,Ohio,<=50K,RandomForest
 15691,31,Private,9,Never-married,Sales,Unmarried,Black,Female,58,<=50K,West Virginia,<=50K,RandomForest
-15692,39,Private,9,Married-civ-spouse,Exec-managerial,Husband,White,Male,60,>50K,New Jersey,>50K,RandomForest
+15692,39,Private,9,Married-civ-spouse,Exec-managerial,Husband,White,Male,60,>50K,New Jersey,<=50K,RandomForest
 15693,45,Local-gov,9,Married-civ-spouse,Craft-repair,Husband,Black,Male,40,>50K,Nebraska,<=50K,RandomForest
 15696,32,Private,11,Married-civ-spouse,Transport-moving,Husband,White,Male,40,<=50K,Georgia,<=50K,RandomForest
 15702,41,Private,13,Never-married,Prof-specialty,Not-in-family,White,Male,40,>50K,Delaware,<=50K,RandomForest
@@ -3788,7 +3788,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 15725,28,Private,3,Never-married,Craft-repair,Not-in-family,White,Male,40,<=50K,Connecticut,<=50K,RandomForest
 15728,37,Private,9,Divorced,Sales,Unmarried,White,Female,25,<=50K,Minnesota,<=50K,RandomForest
 15731,53,Private,13,Never-married,Other-service,Not-in-family,Asian-Pac-Islander,Female,21,>50K,Texas,<=50K,RandomForest
-15738,25,Local-gov,13,Married-civ-spouse,Prof-specialty,Wife,White,Female,38,>50K,Oregon,>50K,RandomForest
+15738,25,Local-gov,13,Married-civ-spouse,Prof-specialty,Wife,White,Female,38,>50K,Oregon,<=50K,RandomForest
 15740,23,Private,8,Never-married,Priv-house-serv,Own-child,White,Male,30,<=50K,Minnesota,<=50K,RandomForest
 15742,25,Private,10,Never-married,Machine-op-inspct,Not-in-family,White,Female,25,<=50K,New Jersey,<=50K,RandomForest
 15747,44,Private,10,Divorced,Adm-clerical,Other-relative,White,Female,40,<=50K,Nebraska,<=50K,RandomForest
@@ -3811,7 +3811,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 15802,45,Private,10,Married-civ-spouse,Machine-op-inspct,Husband,White,Male,44,>50K,Arizona,>50K,RandomForest
 15809,26,Private,9,Never-married,Exec-managerial,Own-child,Other,Female,40,<=50K,Iowa,<=50K,RandomForest
 15810,37,Private,12,Divorced,Prof-specialty,Unmarried,White,Male,25,<=50K,California,<=50K,RandomForest
-15821,41,Private,10,Married-civ-spouse,Sales,Husband,White,Male,35,>50K,Pennsylvania,<=50K,RandomForest
+15821,41,Private,10,Married-civ-spouse,Sales,Husband,White,Male,35,>50K,Pennsylvania,>50K,RandomForest
 15822,64,Private,2,Divorced,Priv-house-serv,Not-in-family,White,Female,12,<=50K,New Hampshire,<=50K,RandomForest
 15828,36,Private,12,Married-civ-spouse,Adm-clerical,Husband,White,Male,40,>50K,Oklahoma,<=50K,RandomForest
 15829,23,Local-gov,13,Never-married,Prof-specialty,Not-in-family,White,Female,40,<=50K,Nebraska,<=50K,RandomForest
@@ -3843,7 +3843,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 15951,44,Private,7,Married-civ-spouse,Sales,Husband,White,Male,40,>50K,Wisconsin,<=50K,RandomForest
 15959,23,Private,11,Never-married,Craft-repair,Unmarried,Black,Female,40,<=50K,Michigan,<=50K,RandomForest
 15965,35,Federal-gov,10,Never-married,Other-service,Unmarried,Black,Female,40,<=50K,Arkansas,<=50K,RandomForest
-15970,30,Private,11,Married-civ-spouse,Prof-specialty,Husband,White,Male,40,>50K,Vermont,>50K,RandomForest
+15970,30,Private,11,Married-civ-spouse,Prof-specialty,Husband,White,Male,40,>50K,Vermont,<=50K,RandomForest
 15974,51,State-gov,10,Divorced,Prof-specialty,Not-in-family,White,Female,40,<=50K,Wyoming,<=50K,RandomForest
 15977,28,Self-emp-not-inc,11,Married-civ-spouse,Farming-fishing,Husband,White,Male,60,<=50K,South Carolina,<=50K,RandomForest
 15980,38,Private,13,Married-civ-spouse,Prof-specialty,Husband,White,Male,40,>50K,Delaware,>50K,RandomForest
@@ -3861,7 +3861,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 16020,53,Private,10,Divorced,Adm-clerical,Not-in-family,White,Female,34,<=50K,Alabama,<=50K,RandomForest
 16022,43,Private,13,Married-civ-spouse,Craft-repair,Husband,White,Male,40,<=50K,North Carolina,>50K,RandomForest
 16024,22,Private,11,Never-married,Prof-specialty,Unmarried,Black,Female,35,<=50K,Virginia,<=50K,RandomForest
-16028,46,Private,9,Married-civ-spouse,Adm-clerical,Wife,White,Female,40,<=50K,Pennsylvania,>50K,RandomForest
+16028,46,Private,9,Married-civ-spouse,Adm-clerical,Wife,White,Female,40,<=50K,Pennsylvania,<=50K,RandomForest
 16033,55,Private,13,Married-civ-spouse,Tech-support,Husband,White,Male,55,>50K,Colorado,>50K,RandomForest
 16043,34,Local-gov,11,Never-married,Craft-repair,Own-child,White,Female,40,<=50K,New Jersey,<=50K,RandomForest
 16044,29,Self-emp-not-inc,10,Never-married,Exec-managerial,Own-child,Asian-Pac-Islander,Male,45,<=50K,New Mexico,<=50K,RandomForest
@@ -3919,7 +3919,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 16269,24,Private,9,Married-civ-spouse,Craft-repair,Husband,White,Male,44,<=50K,Texas,<=50K,RandomForest
 16275,45,Private,3,Divorced,Priv-house-serv,Unmarried,White,Female,35,<=50K,Connecticut,<=50K,RandomForest
 16277,40,Private,12,Never-married,Other-service,Other-relative,White,Male,25,<=50K,Kentucky,<=50K,RandomForest
-16281,47,Private,10,Married-civ-spouse,Machine-op-inspct,Husband,White,Male,46,<=50K,Georgia,<=50K,RandomForest
+16281,47,Private,10,Married-civ-spouse,Machine-op-inspct,Husband,White,Male,46,<=50K,Georgia,>50K,RandomForest
 16287,49,Self-emp-not-inc,10,Married-civ-spouse,Exec-managerial,Husband,White,Male,60,<=50K,New York,<=50K,RandomForest
 16288,72,Private,9,Divorced,Other-service,Not-in-family,White,Female,16,<=50K,Montana,<=50K,RandomForest
 16290,26,Private,9,Married-civ-spouse,Prof-specialty,Husband,White,Male,50,<=50K,New Mexico,<=50K,RandomForest
@@ -3955,7 +3955,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 16369,49,Private,8,Divorced,Machine-op-inspct,Not-in-family,White,Female,40,<=50K,Kentucky,<=50K,RandomForest
 16376,35,Private,9,Married-civ-spouse,Exec-managerial,Husband,White,Male,55,>50K,Alaska,<=50K,RandomForest
 16383,19,Private,10,Never-married,Other-service,Own-child,White,Male,20,<=50K,Rhode Island,<=50K,RandomForest
-16385,45,Private,13,Married-civ-spouse,Other-service,Husband,Asian-Pac-Islander,Male,38,<=50K,Kentucky,>50K,RandomForest
+16385,45,Private,13,Married-civ-spouse,Other-service,Husband,Asian-Pac-Islander,Male,38,<=50K,Kentucky,<=50K,RandomForest
 16386,61,Local-gov,13,Divorced,Other-service,Not-in-family,White,Male,30,<=50K,Washington,<=50K,RandomForest
 16388,36,Local-gov,13,Married-civ-spouse,Prof-specialty,Own-child,White,Male,40,<=50K,Arkansas,<=50K,RandomForest
 16392,33,Private,9,Never-married,Farming-fishing,Not-in-family,White,Male,40,<=50K,South Carolina,<=50K,RandomForest
@@ -4068,7 +4068,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 16885,29,Self-emp-not-inc,9,Married-civ-spouse,Farming-fishing,Husband,White,Male,70,<=50K,North Carolina,<=50K,RandomForest
 16888,47,Federal-gov,10,Married-civ-spouse,Adm-clerical,Husband,White,Male,40,<=50K,New Hampshire,>50K,RandomForest
 16894,52,Private,6,Married-civ-spouse,Machine-op-inspct,Husband,White,Male,41,<=50K,New Jersey,<=50K,RandomForest
-16897,56,Private,14,Never-married,Sales,Not-in-family,White,Male,50,<=50K,Alabama,<=50K,RandomForest
+16897,56,Private,14,Never-married,Sales,Not-in-family,White,Male,50,<=50K,Alabama,>50K,RandomForest
 16898,37,Self-emp-not-inc,7,Divorced,Prof-specialty,Unmarried,Black,Female,30,<=50K,Minnesota,<=50K,RandomForest
 16900,31,Private,5,Never-married,Craft-repair,Not-in-family,Other,Male,45,<=50K,Minnesota,<=50K,RandomForest
 16905,38,Private,11,Married-civ-spouse,Craft-repair,Husband,White,Male,40,>50K,Maryland,<=50K,RandomForest
@@ -4108,7 +4108,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 17042,29,Private,13,Married-civ-spouse,Prof-specialty,Husband,White,Male,40,>50K,Illinois,<=50K,RandomForest
 17048,60,Private,3,Married-civ-spouse,Transport-moving,Husband,White,Male,40,<=50K,Nevada,<=50K,RandomForest
 17056,37,Local-gov,10,Married-spouse-absent,Adm-clerical,Unmarried,Black,Female,27,<=50K,New Hampshire,<=50K,RandomForest
-17057,47,Private,10,Married-civ-spouse,Craft-repair,Husband,Amer-Indian-Eskimo,Male,40,<=50K,Kentucky,<=50K,RandomForest
+17057,47,Private,10,Married-civ-spouse,Craft-repair,Husband,Amer-Indian-Eskimo,Male,40,<=50K,Kentucky,>50K,RandomForest
 17060,30,Self-emp-not-inc,15,Never-married,Prof-specialty,Own-child,White,Male,40,<=50K,Texas,<=50K,RandomForest
 17062,31,Private,13,Never-married,Prof-specialty,Not-in-family,White,Female,72,>50K,Pennsylvania,<=50K,RandomForest
 17063,48,Self-emp-inc,13,Married-civ-spouse,Exec-managerial,Wife,White,Female,25,>50K,Oklahoma,>50K,RandomForest
@@ -4157,7 +4157,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 17258,38,Private,15,Married-civ-spouse,Prof-specialty,Wife,White,Female,40,<=50K,Pennsylvania,>50K,RandomForest
 17260,22,Private,11,Divorced,Tech-support,Not-in-family,White,Male,60,<=50K,Rhode Island,<=50K,RandomForest
 17266,36,Private,9,Married-civ-spouse,Other-service,Husband,White,Male,50,<=50K,Arkansas,<=50K,RandomForest
-17268,24,Private,11,Married-civ-spouse,Transport-moving,Husband,White,Male,40,<=50K,West Virginia,>50K,RandomForest
+17268,24,Private,11,Married-civ-spouse,Transport-moving,Husband,White,Male,40,<=50K,West Virginia,<=50K,RandomForest
 17270,22,State-gov,10,Never-married,Other-service,Other-relative,Black,Male,39,<=50K,New York,<=50K,RandomForest
 17282,43,Private,13,Married-civ-spouse,Adm-clerical,Husband,White,Male,40,>50K,South Dakota,<=50K,RandomForest
 17285,42,Private,10,Divorced,Adm-clerical,Unmarried,White,Female,38,<=50K,California,<=50K,RandomForest
@@ -4221,7 +4221,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 17539,55,Private,10,Never-married,Adm-clerical,Not-in-family,White,Male,45,<=50K,Virginia,<=50K,RandomForest
 17547,25,Private,7,Married-spouse-absent,Handlers-cleaners,Not-in-family,White,Male,40,<=50K,Maine,<=50K,RandomForest
 17551,42,Self-emp-not-inc,9,Never-married,Exec-managerial,Not-in-family,White,Male,48,<=50K,Oregon,<=50K,RandomForest
-17552,49,Private,9,Married-civ-spouse,Transport-moving,Husband,White,Male,44,<=50K,Nebraska,<=50K,RandomForest
+17552,49,Private,9,Married-civ-spouse,Transport-moving,Husband,White,Male,44,<=50K,Nebraska,>50K,RandomForest
 17555,39,Private,10,Never-married,Transport-moving,Unmarried,White,Male,40,<=50K,California,<=50K,RandomForest
 17559,54,Private,9,Divorced,Adm-clerical,Unmarried,White,Female,42,<=50K,Illinois,<=50K,RandomForest
 17567,21,Private,10,Never-married,Machine-op-inspct,Own-child,White,Female,40,<=50K,New Jersey,<=50K,RandomForest
@@ -4392,7 +4392,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 18252,48,Private,12,Married-civ-spouse,Transport-moving,Husband,White,Male,44,<=50K,Missouri,<=50K,RandomForest
 18254,74,Private,5,Widowed,Craft-repair,Not-in-family,White,Male,10,<=50K,New Hampshire,<=50K,RandomForest
 18263,27,State-gov,10,Divorced,Adm-clerical,Unmarried,Black,Male,40,<=50K,Alabama,<=50K,RandomForest
-18268,51,Private,9,Married-civ-spouse,Protective-serv,Husband,White,Male,40,<=50K,Maryland,<=50K,RandomForest
+18268,51,Private,9,Married-civ-spouse,Protective-serv,Husband,White,Male,40,<=50K,Maryland,>50K,RandomForest
 18277,71,Private,14,Never-married,Other-service,Not-in-family,White,Female,20,<=50K,New Hampshire,<=50K,RandomForest
 18281,34,Private,9,Married-civ-spouse,Machine-op-inspct,Other-relative,Other,Female,20,<=50K,Iowa,<=50K,RandomForest
 18282,33,Local-gov,10,Married-civ-spouse,Handlers-cleaners,Husband,White,Male,66,<=50K,North Carolina,<=50K,RandomForest
@@ -4451,7 +4451,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 18482,34,Local-gov,14,Married-civ-spouse,Prof-specialty,Husband,Black,Male,40,<=50K,Pennsylvania,>50K,RandomForest
 18484,46,Private,12,Widowed,Prof-specialty,Unmarried,White,Female,27,<=50K,South Dakota,<=50K,RandomForest
 18486,41,Private,9,Married-civ-spouse,Transport-moving,Husband,White,Male,40,<=50K,Arkansas,>50K,RandomForest
-18487,30,Private,13,Married-civ-spouse,Prof-specialty,Husband,Other,Male,40,<=50K,Mississippi,>50K,RandomForest
+18487,30,Private,13,Married-civ-spouse,Prof-specialty,Husband,Other,Male,40,<=50K,Mississippi,<=50K,RandomForest
 18492,20,Private,10,Never-married,Sales,Own-child,White,Male,30,<=50K,Wyoming,<=50K,RandomForest
 18494,45,Private,10,Divorced,Adm-clerical,Not-in-family,White,Female,48,<=50K,Maryland,<=50K,RandomForest
 18498,17,Private,7,Never-married,Craft-repair,Own-child,White,Female,15,<=50K,Louisiana,<=50K,RandomForest
@@ -4626,7 +4626,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 19203,57,Private,13,Married-civ-spouse,Sales,Husband,White,Male,55,>50K,South Dakota,>50K,RandomForest
 19204,58,Private,9,Married-civ-spouse,Exec-managerial,Husband,White,Male,45,>50K,Pennsylvania,<=50K,RandomForest
 19210,33,Private,9,Divorced,Other-service,Unmarried,White,Female,30,<=50K,Tennessee,<=50K,RandomForest
-19212,50,Private,10,Married-civ-spouse,Sales,Husband,Asian-Pac-Islander,Male,50,>50K,Idaho,<=50K,RandomForest
+19212,50,Private,10,Married-civ-spouse,Sales,Husband,Asian-Pac-Islander,Male,50,>50K,Idaho,>50K,RandomForest
 19218,58,Private,14,Divorced,Prof-specialty,Not-in-family,White,Male,20,<=50K,Louisiana,<=50K,RandomForest
 19221,24,Private,10,Married-civ-spouse,Transport-moving,Husband,White,Male,65,<=50K,Texas,>50K,RandomForest
 19227,20,Private,9,Never-married,Handlers-cleaners,Own-child,White,Male,40,<=50K,Maine,<=50K,RandomForest
@@ -4655,7 +4655,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 19347,26,Private,9,Married-civ-spouse,Tech-support,Husband,White,Male,40,<=50K,Texas,<=50K,RandomForest
 19351,48,Private,14,Married-civ-spouse,Exec-managerial,Husband,White,Male,40,>50K,Nevada,>50K,RandomForest
 19352,30,Private,9,Married-civ-spouse,Sales,Wife,White,Female,30,<=50K,Nevada,<=50K,RandomForest
-19353,42,Local-gov,14,Separated,Exec-managerial,Unmarried,Black,Male,45,>50K,Maryland,>50K,RandomForest
+19353,42,Local-gov,14,Separated,Exec-managerial,Unmarried,Black,Male,45,>50K,Maryland,<=50K,RandomForest
 19357,63,Private,9,Married-civ-spouse,Handlers-cleaners,Husband,White,Male,40,<=50K,Colorado,<=50K,RandomForest
 19359,20,Private,10,Never-married,Handlers-cleaners,Own-child,White,Male,12,<=50K,Arizona,<=50K,RandomForest
 19363,21,Private,9,Never-married,Machine-op-inspct,Own-child,White,Male,40,<=50K,Utah,<=50K,RandomForest
@@ -4681,7 +4681,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 19413,25,Private,13,Never-married,Prof-specialty,Own-child,White,Female,21,<=50K,Iowa,<=50K,RandomForest
 19424,39,Private,6,Married-civ-spouse,Handlers-cleaners,Husband,White,Male,45,<=50K,California,<=50K,RandomForest
 19426,33,Private,9,Married-civ-spouse,Sales,Husband,White,Male,45,<=50K,New Jersey,>50K,RandomForest
-19431,33,Private,10,Married-civ-spouse,Sales,Husband,White,Male,44,<=50K,Connecticut,>50K,RandomForest
+19431,33,Private,10,Married-civ-spouse,Sales,Husband,White,Male,44,<=50K,Connecticut,<=50K,RandomForest
 19433,31,Private,9,Married-civ-spouse,Transport-moving,Husband,White,Male,60,>50K,South Dakota,<=50K,RandomForest
 19441,39,Private,10,Divorced,Adm-clerical,Unmarried,White,Female,35,<=50K,Louisiana,<=50K,RandomForest
 19442,29,Private,4,Married-civ-spouse,Other-service,Wife,White,Female,40,<=50K,South Dakota,<=50K,RandomForest
@@ -4727,7 +4727,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 19584,35,Private,9,Married-civ-spouse,Craft-repair,Husband,White,Male,55,<=50K,New Hampshire,>50K,RandomForest
 19589,28,Private,3,Never-married,Other-service,Not-in-family,White,Female,40,<=50K,New Hampshire,<=50K,RandomForest
 19592,63,Self-emp-not-inc,10,Married-civ-spouse,Other-service,Husband,White,Male,48,<=50K,California,<=50K,RandomForest
-19602,31,Private,13,Married-civ-spouse,Exec-managerial,Husband,White,Male,40,<=50K,Alabama,<=50K,RandomForest
+19602,31,Private,13,Married-civ-spouse,Exec-managerial,Husband,White,Male,40,<=50K,Alabama,>50K,RandomForest
 19604,57,Private,14,Married-civ-spouse,Exec-managerial,Husband,White,Male,50,>50K,Washington,>50K,RandomForest
 19605,28,Private,9,Never-married,Machine-op-inspct,Not-in-family,White,Female,40,<=50K,Louisiana,<=50K,RandomForest
 19607,37,Private,11,Never-married,Other-service,Not-in-family,White,Male,40,<=50K,Ohio,<=50K,RandomForest
@@ -4813,7 +4813,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 19959,55,Local-gov,14,Married-civ-spouse,Exec-managerial,Husband,White,Male,50,<=50K,Mississippi,>50K,RandomForest
 19963,31,Private,13,Married-civ-spouse,Exec-managerial,Wife,White,Female,50,>50K,Florida,>50K,RandomForest
 19964,32,Private,10,Never-married,Other-service,Other-relative,Asian-Pac-Islander,Male,40,<=50K,Oklahoma,<=50K,RandomForest
-19969,72,Private,16,Never-married,Prof-specialty,Not-in-family,White,Male,30,<=50K,Missouri,<=50K,RandomForest
+19969,72,Private,16,Never-married,Prof-specialty,Not-in-family,White,Male,30,<=50K,Missouri,>50K,RandomForest
 19970,34,Federal-gov,10,Married-AF-spouse,Adm-clerical,Wife,White,Female,40,>50K,Nevada,>50K,RandomForest
 19975,31,Private,10,Never-married,Other-service,Not-in-family,White,Male,40,<=50K,Virginia,<=50K,RandomForest
 19984,24,Private,9,Never-married,Sales,Not-in-family,White,Male,38,<=50K,North Carolina,<=50K,RandomForest
@@ -4977,7 +4977,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 20681,26,Local-gov,13,Never-married,Prof-specialty,Own-child,Black,Female,40,<=50K,Montana,<=50K,RandomForest
 20683,41,Private,2,Married-civ-spouse,Machine-op-inspct,Husband,White,Male,40,<=50K,New Hampshire,<=50K,RandomForest
 20686,50,Self-emp-not-inc,10,Divorced,Exec-managerial,Unmarried,Asian-Pac-Islander,Female,40,<=50K,Nevada,<=50K,RandomForest
-20687,52,Private,9,Married-civ-spouse,Sales,Husband,White,Male,36,<=50K,Missouri,<=50K,RandomForest
+20687,52,Private,9,Married-civ-spouse,Sales,Husband,White,Male,36,<=50K,Missouri,>50K,RandomForest
 20691,31,Self-emp-inc,13,Married-civ-spouse,Exec-managerial,Husband,White,Male,50,>50K,New Jersey,>50K,RandomForest
 20692,47,Private,9,Married-civ-spouse,Craft-repair,Husband,White,Male,40,>50K,Arkansas,<=50K,RandomForest
 20697,34,Local-gov,10,Never-married,Adm-clerical,Unmarried,White,Female,18,<=50K,Wisconsin,<=50K,RandomForest
@@ -5006,7 +5006,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 20783,23,Private,11,Never-married,Other-service,Own-child,White,Male,20,<=50K,New Hampshire,<=50K,RandomForest
 20785,52,Private,10,Never-married,Prof-specialty,Not-in-family,White,Male,37,>50K,Vermont,<=50K,RandomForest
 20788,41,Federal-gov,13,Married-civ-spouse,Adm-clerical,Wife,Asian-Pac-Islander,Female,40,>50K,Kansas,>50K,RandomForest
-20789,61,Private,10,Married-civ-spouse,Adm-clerical,Husband,White,Male,40,>50K,Colorado,<=50K,RandomForest
+20789,61,Private,10,Married-civ-spouse,Adm-clerical,Husband,White,Male,40,>50K,Colorado,>50K,RandomForest
 20796,26,Private,13,Never-married,Exec-managerial,Not-in-family,Asian-Pac-Islander,Male,35,<=50K,North Dakota,<=50K,RandomForest
 20803,31,Private,13,Never-married,Prof-specialty,Not-in-family,White,Male,40,<=50K,Ohio,<=50K,RandomForest
 20804,30,Private,10,Never-married,Craft-repair,Unmarried,Black,Male,40,<=50K,South Carolina,<=50K,RandomForest
@@ -5079,7 +5079,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 21078,26,Private,13,Never-married,Prof-specialty,Not-in-family,White,Female,45,<=50K,Idaho,<=50K,RandomForest
 21079,39,Private,9,Divorced,Tech-support,Unmarried,White,Female,50,<=50K,New York,<=50K,RandomForest
 21083,23,Private,10,Never-married,Tech-support,Own-child,White,Male,25,<=50K,Connecticut,<=50K,RandomForest
-21091,27,Private,12,Married-civ-spouse,Exec-managerial,Husband,White,Male,55,<=50K,Virginia,>50K,RandomForest
+21091,27,Private,12,Married-civ-spouse,Exec-managerial,Husband,White,Male,55,<=50K,Virginia,<=50K,RandomForest
 21112,61,Self-emp-inc,10,Widowed,Sales,Not-in-family,White,Female,20,<=50K,Nevada,<=50K,RandomForest
 21116,50,Private,9,Married-civ-spouse,Machine-op-inspct,Husband,White,Male,58,<=50K,Wisconsin,<=50K,RandomForest
 21122,30,Private,10,Never-married,Adm-clerical,Unmarried,White,Female,30,<=50K,Nebraska,<=50K,RandomForest
@@ -5264,7 +5264,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 21951,21,State-gov,10,Never-married,Adm-clerical,Own-child,White,Female,35,<=50K,Virginia,<=50K,RandomForest
 21952,37,Federal-gov,9,Married-civ-spouse,Adm-clerical,Husband,White,Male,40,>50K,Oklahoma,<=50K,RandomForest
 21969,31,Private,10,Married-civ-spouse,Machine-op-inspct,Husband,White,Male,40,<=50K,Maine,<=50K,RandomForest
-21979,66,Private,10,Married-civ-spouse,Tech-support,Husband,White,Male,40,>50K,Utah,>50K,RandomForest
+21979,66,Private,10,Married-civ-spouse,Tech-support,Husband,White,Male,40,>50K,Utah,<=50K,RandomForest
 21986,30,Private,9,Divorced,Other-service,Unmarried,White,Female,32,<=50K,Texas,<=50K,RandomForest
 21989,24,Private,9,Separated,Sales,Unmarried,White,Female,48,<=50K,Alaska,<=50K,RandomForest
 21991,26,Private,9,Separated,Exec-managerial,Own-child,White,Female,40,<=50K,Indiana,<=50K,RandomForest
@@ -5282,11 +5282,11 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 22045,30,Private,11,Divorced,Prof-specialty,Unmarried,White,Female,36,<=50K,Louisiana,<=50K,RandomForest
 22058,80,Private,9,Married-spouse-absent,Adm-clerical,Not-in-family,White,Female,16,<=50K,Connecticut,<=50K,RandomForest
 22061,43,Private,9,Married-civ-spouse,Craft-repair,Husband,White,Male,40,>50K,New Mexico,>50K,RandomForest
-22063,35,Private,9,Married-civ-spouse,Exec-managerial,Wife,White,Female,40,>50K,New Hampshire,<=50K,RandomForest
+22063,35,Private,9,Married-civ-spouse,Exec-managerial,Wife,White,Female,40,>50K,New Hampshire,>50K,RandomForest
 22066,34,State-gov,13,Married-civ-spouse,Prof-specialty,Wife,White,Female,45,>50K,New York,>50K,RandomForest
 22072,37,Private,9,Married-civ-spouse,Transport-moving,Husband,Asian-Pac-Islander,Male,40,<=50K,Georgia,<=50K,RandomForest
 22084,25,State-gov,10,Married-civ-spouse,Protective-serv,Husband,White,Male,40,<=50K,Rhode Island,<=50K,RandomForest
-22088,59,Private,6,Married-civ-spouse,Transport-moving,Husband,White,Male,45,>50K,Kansas,<=50K,RandomForest
+22088,59,Private,6,Married-civ-spouse,Transport-moving,Husband,White,Male,45,>50K,Kansas,>50K,RandomForest
 22090,35,Private,9,Married-spouse-absent,Adm-clerical,Unmarried,Black,Female,40,<=50K,Oregon,<=50K,RandomForest
 22092,29,Private,13,Married-civ-spouse,Sales,Husband,White,Male,40,>50K,Rhode Island,>50K,RandomForest
 22095,26,Private,10,Never-married,Adm-clerical,Own-child,White,Female,40,<=50K,North Dakota,<=50K,RandomForest
@@ -5359,7 +5359,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 22375,50,Private,10,Married-civ-spouse,Sales,Husband,White,Male,40,<=50K,Florida,>50K,RandomForest
 22381,24,Private,10,Never-married,Handlers-cleaners,Own-child,Black,Male,40,<=50K,Massachusetts,<=50K,RandomForest
 22385,38,Private,5,Married-civ-spouse,Other-service,Wife,Black,Female,24,<=50K,Maryland,<=50K,RandomForest
-22388,45,Private,10,Married-civ-spouse,Sales,Husband,White,Male,60,>50K,Tennessee,>50K,RandomForest
+22388,45,Private,10,Married-civ-spouse,Sales,Husband,White,Male,60,>50K,Tennessee,<=50K,RandomForest
 22390,44,State-gov,13,Married-civ-spouse,Adm-clerical,Husband,White,Male,46,>50K,Louisiana,>50K,RandomForest
 22391,60,Private,13,Married-civ-spouse,Prof-specialty,Husband,White,Male,50,>50K,Alaska,>50K,RandomForest
 22393,25,Local-gov,10,Married-civ-spouse,Exec-managerial,Husband,White,Male,40,>50K,Tennessee,<=50K,RandomForest
@@ -5391,7 +5391,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 22487,25,Private,9,Never-married,Machine-op-inspct,Own-child,White,Male,40,<=50K,Arkansas,<=50K,RandomForest
 22490,28,Private,9,Never-married,Machine-op-inspct,Own-child,White,Female,40,<=50K,Texas,<=50K,RandomForest
 22499,47,Private,7,Married-civ-spouse,Other-service,Husband,Amer-Indian-Eskimo,Male,36,<=50K,Connecticut,<=50K,RandomForest
-22500,54,Self-emp-not-inc,9,Married-civ-spouse,Farming-fishing,Husband,White,Male,60,>50K,North Dakota,<=50K,RandomForest
+22500,54,Self-emp-not-inc,9,Married-civ-spouse,Farming-fishing,Husband,White,Male,60,>50K,North Dakota,>50K,RandomForest
 22501,32,Local-gov,14,Never-married,Prof-specialty,Not-in-family,White,Male,50,<=50K,Connecticut,<=50K,RandomForest
 22502,61,Private,10,Married-civ-spouse,Sales,Husband,White,Male,40,<=50K,Delaware,<=50K,RandomForest
 22504,38,Local-gov,9,Married-civ-spouse,Transport-moving,Husband,White,Male,20,<=50K,Indiana,<=50K,RandomForest
@@ -5405,7 +5405,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 22532,46,Private,15,Separated,Prof-specialty,Not-in-family,White,Male,50,>50K,Maine,>50K,RandomForest
 22533,44,Self-emp-not-inc,10,Married-civ-spouse,Craft-repair,Husband,White,Male,40,<=50K,Maine,<=50K,RandomForest
 22534,25,Private,9,Married-civ-spouse,Machine-op-inspct,Husband,White,Male,40,<=50K,Georgia,<=50K,RandomForest
-22541,60,Self-emp-inc,10,Married-civ-spouse,Exec-managerial,Husband,White,Male,40,>50K,Virginia,>50K,RandomForest
+22541,60,Self-emp-inc,10,Married-civ-spouse,Exec-managerial,Husband,White,Male,40,>50K,Virginia,<=50K,RandomForest
 22542,36,Self-emp-not-inc,14,Married-civ-spouse,Farming-fishing,Husband,White,Male,70,<=50K,Alabama,<=50K,RandomForest
 22543,27,Private,14,Never-married,Sales,Own-child,White,Female,40,<=50K,New Mexico,<=50K,RandomForest
 22544,57,Self-emp-not-inc,10,Married-civ-spouse,Other-service,Husband,White,Male,48,<=50K,Oregon,<=50K,RandomForest
@@ -5573,7 +5573,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 23248,36,Self-emp-not-inc,9,Divorced,Transport-moving,Not-in-family,White,Male,60,<=50K,Hawaii,<=50K,RandomForest
 23256,53,Private,9,Married-civ-spouse,Craft-repair,Husband,White,Male,40,<=50K,Louisiana,<=50K,RandomForest
 23260,35,Private,10,Divorced,Other-service,Unmarried,Black,Female,40,<=50K,Connecticut,<=50K,RandomForest
-23263,36,Private,9,Married-civ-spouse,Machine-op-inspct,Husband,White,Male,85,<=50K,Oklahoma,>50K,RandomForest
+23263,36,Private,9,Married-civ-spouse,Machine-op-inspct,Husband,White,Male,85,<=50K,Oklahoma,<=50K,RandomForest
 23266,24,Private,3,Never-married,Machine-op-inspct,Other-relative,White,Male,40,<=50K,Wyoming,<=50K,RandomForest
 23271,49,Self-emp-not-inc,9,Divorced,Farming-fishing,Not-in-family,White,Female,28,<=50K,Missouri,<=50K,RandomForest
 23275,51,Private,13,Married-civ-spouse,Prof-specialty,Husband,White,Male,50,>50K,Minnesota,>50K,RandomForest
@@ -5594,7 +5594,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 23334,24,Private,9,Married-civ-spouse,Other-service,Husband,White,Male,39,<=50K,New Hampshire,<=50K,RandomForest
 23336,17,Private,6,Never-married,Adm-clerical,Own-child,White,Female,20,<=50K,Ohio,<=50K,RandomForest
 23345,32,Private,10,Married-civ-spouse,Handlers-cleaners,Husband,White,Male,40,<=50K,California,<=50K,RandomForest
-23347,48,State-gov,9,Married-civ-spouse,Adm-clerical,Husband,White,Male,35,>50K,Florida,<=50K,RandomForest
+23347,48,State-gov,9,Married-civ-spouse,Adm-clerical,Husband,White,Male,35,>50K,Florida,>50K,RandomForest
 23349,43,Private,14,Never-married,Adm-clerical,Not-in-family,White,Male,40,<=50K,Connecticut,<=50K,RandomForest
 23352,31,Private,9,Never-married,Machine-op-inspct,Not-in-family,Black,Male,40,<=50K,Massachusetts,<=50K,RandomForest
 23355,37,Private,13,Divorced,Other-service,Not-in-family,White,Male,40,<=50K,Nebraska,<=50K,RandomForest
@@ -5668,7 +5668,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 23646,59,Private,10,Separated,Adm-clerical,Unmarried,White,Male,40,<=50K,Connecticut,<=50K,RandomForest
 23647,54,Self-emp-inc,16,Married-civ-spouse,Prof-specialty,Husband,White,Male,60,>50K,Delaware,>50K,RandomForest
 23657,30,Private,9,Never-married,Other-service,Not-in-family,White,Female,35,<=50K,Oklahoma,<=50K,RandomForest
-23666,53,Private,10,Married-civ-spouse,Craft-repair,Husband,White,Male,36,>50K,California,<=50K,RandomForest
+23666,53,Private,10,Married-civ-spouse,Craft-repair,Husband,White,Male,36,>50K,California,>50K,RandomForest
 23667,47,Self-emp-not-inc,13,Widowed,Exec-managerial,Unmarried,Asian-Pac-Islander,Female,60,<=50K,Maine,<=50K,RandomForest
 23668,24,Private,10,Never-married,Handlers-cleaners,Own-child,White,Male,40,<=50K,Delaware,<=50K,RandomForest
 23675,50,Local-gov,9,Married-civ-spouse,Transport-moving,Husband,White,Male,40,<=50K,Idaho,>50K,RandomForest
@@ -5743,7 +5743,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 23969,39,Private,10,Divorced,Other-service,Not-in-family,White,Male,40,<=50K,Delaware,<=50K,RandomForest
 23970,32,Private,9,Married-civ-spouse,Handlers-cleaners,Husband,White,Male,40,<=50K,Washington,<=50K,RandomForest
 23975,22,Private,10,Never-married,Sales,Not-in-family,White,Female,30,<=50K,North Dakota,<=50K,RandomForest
-23979,28,Private,13,Married-civ-spouse,Exec-managerial,Husband,White,Male,45,<=50K,Ohio,<=50K,RandomForest
+23979,28,Private,13,Married-civ-spouse,Exec-managerial,Husband,White,Male,45,<=50K,Ohio,>50K,RandomForest
 23984,36,Private,9,Married-civ-spouse,Prof-specialty,Husband,Asian-Pac-Islander,Male,40,<=50K,Georgia,<=50K,RandomForest
 23985,18,Private,5,Never-married,Sales,Own-child,White,Female,42,<=50K,Texas,<=50K,RandomForest
 23991,40,Private,13,Married-spouse-absent,Transport-moving,Own-child,Other,Male,45,<=50K,Rhode Island,<=50K,RandomForest
@@ -5785,7 +5785,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 24138,59,Private,9,Married-civ-spouse,Adm-clerical,Wife,White,Female,40,<=50K,Wisconsin,<=50K,RandomForest
 24147,23,Private,10,Never-married,Transport-moving,Not-in-family,White,Male,40,<=50K,Nebraska,<=50K,RandomForest
 24165,26,Self-emp-inc,13,Never-married,Exec-managerial,Not-in-family,White,Male,50,<=50K,Kansas,<=50K,RandomForest
-24168,43,Private,8,Married-civ-spouse,Adm-clerical,Husband,Black,Male,40,<=50K,New Mexico,<=50K,RandomForest
+24168,43,Private,8,Married-civ-spouse,Adm-clerical,Husband,Black,Male,40,<=50K,New Mexico,>50K,RandomForest
 24170,45,Private,13,Married-civ-spouse,Prof-specialty,Husband,White,Male,60,>50K,Kansas,>50K,RandomForest
 24171,48,Private,9,Never-married,Machine-op-inspct,Not-in-family,Black,Male,40,<=50K,Oklahoma,<=50K,RandomForest
 24175,50,Self-emp-not-inc,13,Divorced,Prof-specialty,Not-in-family,White,Female,60,<=50K,Hawaii,<=50K,RandomForest
@@ -5826,7 +5826,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 24349,46,Private,11,Married-civ-spouse,Exec-managerial,Husband,White,Male,40,>50K,Texas,>50K,RandomForest
 24358,51,Private,9,Widowed,Machine-op-inspct,Not-in-family,Black,Female,40,<=50K,Indiana,<=50K,RandomForest
 24359,34,Private,9,Divorced,Other-service,Own-child,White,Male,40,<=50K,Massachusetts,<=50K,RandomForest
-24364,36,Private,9,Married-civ-spouse,Craft-repair,Husband,White,Male,44,<=50K,Minnesota,>50K,RandomForest
+24364,36,Private,9,Married-civ-spouse,Craft-repair,Husband,White,Male,44,<=50K,Minnesota,<=50K,RandomForest
 24367,68,Private,5,Divorced,Farming-fishing,Not-in-family,Black,Male,20,<=50K,Wisconsin,<=50K,RandomForest
 24370,48,Local-gov,14,Divorced,Prof-specialty,Not-in-family,White,Female,40,>50K,South Dakota,<=50K,RandomForest
 24371,27,Private,13,Never-married,Sales,Not-in-family,White,Male,45,<=50K,Utah,>50K,RandomForest
@@ -5997,7 +5997,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 25000,27,Private,11,Never-married,Other-service,Not-in-family,Asian-Pac-Islander,Female,40,<=50K,North Carolina,<=50K,RandomForest
 25003,64,Self-emp-not-inc,6,Married-civ-spouse,Prof-specialty,Husband,White,Male,10,>50K,Pennsylvania,<=50K,RandomForest
 25016,25,Private,10,Never-married,Tech-support,Own-child,White,Female,40,<=50K,Florida,<=50K,RandomForest
-25023,65,Self-emp-inc,9,Married-civ-spouse,Sales,Husband,White,Male,50,<=50K,Wyoming,<=50K,RandomForest
+25023,65,Self-emp-inc,9,Married-civ-spouse,Sales,Husband,White,Male,50,<=50K,Wyoming,>50K,RandomForest
 25030,32,Self-emp-inc,10,Married-civ-spouse,Exec-managerial,Husband,White,Male,55,>50K,California,>50K,RandomForest
 25031,77,Private,15,Married-civ-spouse,Exec-managerial,Husband,White,Male,40,<=50K,Oklahoma,>50K,RandomForest
 25037,50,Private,14,Married-civ-spouse,Sales,Husband,White,Male,40,>50K,Oregon,>50K,RandomForest
@@ -6046,7 +6046,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 25189,62,Private,9,Married-civ-spouse,Other-service,Husband,White,Male,20,<=50K,North Dakota,<=50K,RandomForest
 25192,35,Self-emp-not-inc,13,Separated,Craft-repair,Not-in-family,White,Male,65,<=50K,North Dakota,<=50K,RandomForest
 25193,27,Private,13,Never-married,Prof-specialty,Own-child,Asian-Pac-Islander,Male,40,<=50K,Maine,<=50K,RandomForest
-25197,63,Self-emp-inc,12,Married-civ-spouse,Sales,Husband,White,Male,40,>50K,California,<=50K,RandomForest
+25197,63,Self-emp-inc,12,Married-civ-spouse,Sales,Husband,White,Male,40,>50K,California,>50K,RandomForest
 25201,50,Self-emp-inc,9,Married-civ-spouse,Sales,Husband,White,Male,48,>50K,North Dakota,>50K,RandomForest
 25209,42,Local-gov,13,Divorced,Transport-moving,Not-in-family,White,Male,33,<=50K,Pennsylvania,<=50K,RandomForest
 25221,56,Self-emp-not-inc,9,Married-civ-spouse,Farming-fishing,Husband,White,Male,40,<=50K,Colorado,<=50K,RandomForest
@@ -6095,7 +6095,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 25432,27,Private,14,Never-married,Prof-specialty,Not-in-family,White,Male,40,<=50K,South Carolina,<=50K,RandomForest
 25437,21,Private,9,Never-married,Machine-op-inspct,Own-child,White,Male,40,<=50K,Iowa,<=50K,RandomForest
 25438,17,Private,6,Never-married,Other-service,Own-child,White,Male,15,<=50K,Iowa,<=50K,RandomForest
-25443,32,Private,12,Married-civ-spouse,Prof-specialty,Husband,White,Male,45,>50K,Kentucky,<=50K,RandomForest
+25443,32,Private,12,Married-civ-spouse,Prof-specialty,Husband,White,Male,45,>50K,Kentucky,>50K,RandomForest
 25447,51,Private,4,Never-married,Handlers-cleaners,Own-child,White,Male,19,<=50K,Florida,<=50K,RandomForest
 25449,54,Private,6,Married-civ-spouse,Machine-op-inspct,Husband,White,Male,60,<=50K,Delaware,<=50K,RandomForest
 25451,24,Private,9,Never-married,Handlers-cleaners,Not-in-family,White,Male,20,<=50K,Vermont,<=50K,RandomForest
@@ -6236,7 +6236,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 26039,28,Private,9,Never-married,Handlers-cleaners,Not-in-family,White,Male,40,<=50K,New Jersey,<=50K,RandomForest
 26045,33,Private,9,Married-spouse-absent,Sales,Not-in-family,White,Male,20,<=50K,Mississippi,<=50K,RandomForest
 26054,37,Local-gov,10,Married-civ-spouse,Transport-moving,Husband,White,Male,40,<=50K,Utah,<=50K,RandomForest
-26055,37,Private,11,Married-civ-spouse,Prof-specialty,Husband,White,Male,48,>50K,Pennsylvania,>50K,RandomForest
+26055,37,Private,11,Married-civ-spouse,Prof-specialty,Husband,White,Male,48,>50K,Pennsylvania,<=50K,RandomForest
 26056,26,Private,9,Divorced,Craft-repair,Not-in-family,White,Male,40,<=50K,West Virginia,<=50K,RandomForest
 26061,53,Federal-gov,9,Married-civ-spouse,Tech-support,Husband,White,Male,40,>50K,South Carolina,>50K,RandomForest
 26064,33,Private,10,Separated,Tech-support,Unmarried,White,Female,50,<=50K,Utah,<=50K,RandomForest
@@ -6354,7 +6354,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 26606,24,Private,9,Married-civ-spouse,Craft-repair,Husband,White,Male,40,<=50K,North Dakota,<=50K,RandomForest
 26608,32,Private,11,Married-civ-spouse,Transport-moving,Husband,White,Male,99,>50K,Idaho,>50K,RandomForest
 26611,38,Private,5,Married-spouse-absent,Handlers-cleaners,Not-in-family,White,Male,40,<=50K,Nevada,<=50K,RandomForest
-26612,53,Local-gov,15,Never-married,Prof-specialty,Not-in-family,White,Female,50,>50K,South Dakota,>50K,RandomForest
+26612,53,Local-gov,15,Never-married,Prof-specialty,Not-in-family,White,Female,50,>50K,South Dakota,<=50K,RandomForest
 26622,45,Private,14,Married-civ-spouse,Other-service,Husband,White,Male,40,<=50K,Michigan,<=50K,RandomForest
 26625,64,Private,16,Married-civ-spouse,Prof-specialty,Husband,White,Male,60,>50K,Arizona,>50K,RandomForest
 26628,30,Private,9,Never-married,Machine-op-inspct,Other-relative,White,Male,40,<=50K,Maine,<=50K,RandomForest
@@ -6656,10 +6656,10 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 27944,18,Private,8,Never-married,Sales,Own-child,White,Female,8,<=50K,Nebraska,<=50K,RandomForest
 27947,66,Private,13,Widowed,Other-service,Not-in-family,White,Male,12,<=50K,Arizona,<=50K,RandomForest
 27958,52,Private,9,Widowed,Transport-moving,Not-in-family,White,Male,40,<=50K,Iowa,<=50K,RandomForest
-27961,47,Private,13,Married-civ-spouse,Tech-support,Husband,White,Male,48,<=50K,Hawaii,<=50K,RandomForest
+27961,47,Private,13,Married-civ-spouse,Tech-support,Husband,White,Male,48,<=50K,Hawaii,>50K,RandomForest
 27966,39,Self-emp-not-inc,9,Married-civ-spouse,Exec-managerial,Husband,White,Male,16,<=50K,Arizona,<=50K,RandomForest
 27971,24,Private,13,Never-married,Sales,Own-child,Black,Male,40,<=50K,Oklahoma,<=50K,RandomForest
-27974,36,Private,10,Married-civ-spouse,Craft-repair,Husband,White,Male,50,<=50K,Michigan,>50K,RandomForest
+27974,36,Private,10,Married-civ-spouse,Craft-repair,Husband,White,Male,50,<=50K,Michigan,<=50K,RandomForest
 27975,26,Self-emp-not-inc,9,Married-civ-spouse,Exec-managerial,Husband,White,Male,45,<=50K,Washington,<=50K,RandomForest
 27977,36,Private,9,Married-civ-spouse,Craft-repair,Husband,White,Male,40,<=50K,Kansas,>50K,RandomForest
 27978,23,Self-emp-not-inc,7,Never-married,Craft-repair,Own-child,White,Male,50,<=50K,Alaska,<=50K,RandomForest
@@ -6672,7 +6672,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 28016,26,Self-emp-not-inc,9,Married-civ-spouse,Adm-clerical,Husband,White,Male,40,<=50K,Kentucky,<=50K,RandomForest
 28021,21,Private,9,Married-spouse-absent,Exec-managerial,Other-relative,White,Female,60,<=50K,New Mexico,<=50K,RandomForest
 28025,50,Private,13,Married-civ-spouse,Exec-managerial,Husband,White,Male,60,<=50K,Alabama,>50K,RandomForest
-28030,26,Private,10,Married-civ-spouse,Adm-clerical,Wife,White,Female,42,<=50K,Maryland,>50K,RandomForest
+28030,26,Private,10,Married-civ-spouse,Adm-clerical,Wife,White,Female,42,<=50K,Maryland,<=50K,RandomForest
 28032,21,State-gov,10,Never-married,Adm-clerical,Own-child,Asian-Pac-Islander,Female,12,<=50K,Arizona,<=50K,RandomForest
 28033,39,Private,9,Married-civ-spouse,Transport-moving,Husband,White,Male,55,<=50K,Tennessee,>50K,RandomForest
 28043,28,Self-emp-not-inc,3,Married-civ-spouse,Handlers-cleaners,Husband,White,Male,25,<=50K,Wisconsin,<=50K,RandomForest
@@ -6695,7 +6695,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 28121,34,Local-gov,12,Married-civ-spouse,Prof-specialty,Husband,White,Male,40,>50K,North Carolina,<=50K,RandomForest
 28122,38,Private,10,Never-married,Craft-repair,Own-child,White,Female,25,<=50K,Wyoming,<=50K,RandomForest
 28132,43,Private,13,Never-married,Exec-managerial,Not-in-family,Black,Female,50,>50K,Texas,<=50K,RandomForest
-28141,50,Private,8,Married-civ-spouse,Sales,Husband,Asian-Pac-Islander,Male,40,>50K,New Jersey,>50K,RandomForest
+28141,50,Private,8,Married-civ-spouse,Sales,Husband,Asian-Pac-Islander,Male,40,>50K,New Jersey,<=50K,RandomForest
 28161,55,Private,10,Divorced,Other-service,Not-in-family,White,Female,20,<=50K,New Jersey,<=50K,RandomForest
 28162,51,Local-gov,10,Married-civ-spouse,Adm-clerical,Wife,White,Female,40,<=50K,Michigan,<=50K,RandomForest
 28168,42,Private,9,Divorced,Adm-clerical,Unmarried,White,Male,40,<=50K,California,<=50K,RandomForest
@@ -6922,7 +6922,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 29168,31,Private,9,Never-married,Farming-fishing,Not-in-family,White,Male,40,<=50K,Georgia,<=50K,RandomForest
 29170,34,Private,9,Married-civ-spouse,Craft-repair,Husband,White,Male,40,<=50K,Montana,<=50K,RandomForest
 29173,36,State-gov,11,Married-civ-spouse,Other-service,Husband,Asian-Pac-Islander,Male,40,<=50K,Louisiana,<=50K,RandomForest
-29176,54,Private,10,Widowed,Prof-specialty,Not-in-family,White,Male,50,<=50K,Ohio,>50K,RandomForest
+29176,54,Private,10,Widowed,Prof-specialty,Not-in-family,White,Male,50,<=50K,Ohio,<=50K,RandomForest
 29177,24,Private,5,Never-married,Machine-op-inspct,Own-child,Black,Female,40,<=50K,North Dakota,<=50K,RandomForest
 29181,31,Private,13,Never-married,Adm-clerical,Not-in-family,White,Male,50,<=50K,Rhode Island,<=50K,RandomForest
 29184,24,Private,10,Married-civ-spouse,Craft-repair,Husband,White,Male,35,<=50K,New York,<=50K,RandomForest
@@ -7054,7 +7054,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 29759,25,Private,13,Never-married,Craft-repair,Own-child,White,Male,30,<=50K,Virginia,<=50K,RandomForest
 29768,18,Federal-gov,7,Never-married,Other-service,Own-child,Asian-Pac-Islander,Male,15,<=50K,Vermont,<=50K,RandomForest
 29778,32,Private,13,Divorced,Sales,Unmarried,White,Female,30,<=50K,Wyoming,<=50K,RandomForest
-29789,33,Federal-gov,13,Married-civ-spouse,Prof-specialty,Husband,White,Male,40,<=50K,Wyoming,>50K,RandomForest
+29789,33,Federal-gov,13,Married-civ-spouse,Prof-specialty,Husband,White,Male,40,<=50K,Wyoming,<=50K,RandomForest
 29790,49,Federal-gov,11,Married-civ-spouse,Craft-repair,Husband,White,Male,40,<=50K,New Jersey,>50K,RandomForest
 29796,23,Private,13,Never-married,Other-service,Not-in-family,White,Male,66,<=50K,Tennessee,<=50K,RandomForest
 29800,22,Private,9,Never-married,Machine-op-inspct,Own-child,White,Male,40,<=50K,Nevada,<=50K,RandomForest
@@ -7107,7 +7107,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 29996,25,Private,9,Never-married,Adm-clerical,Not-in-family,White,Male,40,<=50K,California,<=50K,RandomForest
 30003,21,Private,9,Never-married,Machine-op-inspct,Not-in-family,White,Male,45,<=50K,Colorado,<=50K,RandomForest
 30014,37,Private,10,Married-civ-spouse,Machine-op-inspct,Husband,White,Male,40,<=50K,Louisiana,<=50K,RandomForest
-30020,29,Federal-gov,13,Married-AF-spouse,Prof-specialty,Husband,White,Male,50,>50K,Indiana,<=50K,RandomForest
+30020,29,Federal-gov,13,Married-AF-spouse,Prof-specialty,Husband,White,Male,50,>50K,Indiana,>50K,RandomForest
 30023,39,Private,13,Divorced,Sales,Unmarried,White,Female,40,<=50K,New Jersey,<=50K,RandomForest
 30027,62,Private,9,Never-married,Adm-clerical,Not-in-family,White,Female,32,<=50K,Oklahoma,<=50K,RandomForest
 30036,37,State-gov,10,Divorced,Prof-specialty,Unmarried,White,Female,30,<=50K,West Virginia,<=50K,RandomForest
@@ -7227,7 +7227,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 30531,20,Private,9,Never-married,Other-service,Own-child,Asian-Pac-Islander,Female,15,<=50K,Louisiana,<=50K,RandomForest
 30535,23,State-gov,12,Never-married,Adm-clerical,Not-in-family,White,Female,25,<=50K,Colorado,<=50K,RandomForest
 30543,18,Private,7,Never-married,Sales,Own-child,White,Female,15,<=50K,New York,<=50K,RandomForest
-30544,34,Private,10,Married-civ-spouse,Handlers-cleaners,Husband,White,Male,50,<=50K,Massachusetts,>50K,RandomForest
+30544,34,Private,10,Married-civ-spouse,Handlers-cleaners,Husband,White,Male,50,<=50K,Massachusetts,<=50K,RandomForest
 30547,23,Private,10,Never-married,Farming-fishing,Not-in-family,White,Female,50,<=50K,Louisiana,<=50K,RandomForest
 30548,33,Private,10,Married-civ-spouse,Transport-moving,Husband,White,Male,40,<=50K,Illinois,<=50K,RandomForest
 30549,43,Private,14,Married-civ-spouse,Exec-managerial,Husband,White,Male,45,<=50K,Michigan,>50K,RandomForest
@@ -7297,7 +7297,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 30777,21,Private,10,Never-married,Other-service,Own-child,White,Female,25,<=50K,Indiana,<=50K,RandomForest
 30781,34,Local-gov,13,Married-civ-spouse,Prof-specialty,Wife,White,Female,46,>50K,Iowa,>50K,RandomForest
 30783,27,State-gov,10,Married-civ-spouse,Exec-managerial,Husband,Black,Male,40,>50K,Indiana,<=50K,RandomForest
-30787,49,Self-emp-inc,10,Married-civ-spouse,Prof-specialty,Wife,White,Female,65,>50K,South Carolina,>50K,RandomForest
+30787,49,Self-emp-inc,10,Married-civ-spouse,Prof-specialty,Wife,White,Female,65,>50K,South Carolina,<=50K,RandomForest
 30790,37,Self-emp-not-inc,10,Married-civ-spouse,Adm-clerical,Wife,White,Female,20,<=50K,Georgia,>50K,RandomForest
 30791,57,Private,14,Divorced,Prof-specialty,Not-in-family,White,Male,30,<=50K,Mississippi,<=50K,RandomForest
 30802,22,Private,9,Never-married,Exec-managerial,Not-in-family,White,Male,40,<=50K,Michigan,<=50K,RandomForest
@@ -7306,7 +7306,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 30828,34,Private,9,Married-civ-spouse,Transport-moving,Husband,White,Male,45,<=50K,Kansas,<=50K,RandomForest
 30829,45,State-gov,13,Separated,Prof-specialty,Not-in-family,White,Female,40,<=50K,West Virginia,<=50K,RandomForest
 30830,46,Private,12,Widowed,Adm-clerical,Unmarried,White,Female,40,<=50K,Indiana,<=50K,RandomForest
-30832,29,Private,13,Married-civ-spouse,Prof-specialty,Husband,White,Male,40,>50K,Louisiana,<=50K,RandomForest
+30832,29,Private,13,Married-civ-spouse,Prof-specialty,Husband,White,Male,40,>50K,Louisiana,>50K,RandomForest
 30834,39,Private,5,Married-civ-spouse,Craft-repair,Husband,White,Male,40,<=50K,Rhode Island,<=50K,RandomForest
 30836,34,Private,9,Married-civ-spouse,Machine-op-inspct,Husband,Black,Male,40,<=50K,Nevada,<=50K,RandomForest
 30838,52,Private,11,Married-civ-spouse,Craft-repair,Husband,White,Male,40,>50K,Wisconsin,<=50K,RandomForest
@@ -7395,7 +7395,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 31154,33,Private,14,Never-married,Prof-specialty,Not-in-family,White,Female,40,<=50K,Virginia,<=50K,RandomForest
 31155,44,Private,9,Never-married,Adm-clerical,Not-in-family,White,Female,43,<=50K,Kansas,<=50K,RandomForest
 31159,35,Private,9,Never-married,Craft-repair,Unmarried,White,Male,50,<=50K,Michigan,<=50K,RandomForest
-31161,48,Private,9,Married-civ-spouse,Adm-clerical,Husband,White,Male,70,>50K,Hawaii,<=50K,RandomForest
+31161,48,Private,9,Married-civ-spouse,Adm-clerical,Husband,White,Male,70,>50K,Hawaii,>50K,RandomForest
 31162,54,Local-gov,9,Widowed,Other-service,Unmarried,Black,Female,40,<=50K,Kansas,<=50K,RandomForest
 31165,28,Private,10,Married-civ-spouse,Exec-managerial,Husband,Amer-Indian-Eskimo,Male,55,<=50K,West Virginia,<=50K,RandomForest
 31168,41,Local-gov,10,Married-civ-spouse,Protective-serv,Husband,White,Male,45,>50K,South Dakota,>50K,RandomForest
@@ -7414,7 +7414,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 31238,20,Private,14,Never-married,Exec-managerial,Own-child,White,Male,25,<=50K,Oregon,<=50K,RandomForest
 31248,26,Private,9,Never-married,Machine-op-inspct,Not-in-family,White,Male,40,<=50K,New Mexico,<=50K,RandomForest
 31250,55,Local-gov,14,Divorced,Prof-specialty,Unmarried,White,Female,45,<=50K,Georgia,<=50K,RandomForest
-31251,47,Private,13,Married-civ-spouse,Sales,Husband,White,Male,40,>50K,Maryland,<=50K,RandomForest
+31251,47,Private,13,Married-civ-spouse,Sales,Husband,White,Male,40,>50K,Maryland,>50K,RandomForest
 31254,44,Private,12,Divorced,Prof-specialty,Not-in-family,White,Female,40,>50K,North Dakota,<=50K,RandomForest
 31258,26,Private,9,Never-married,Adm-clerical,Not-in-family,White,Female,50,<=50K,Alaska,<=50K,RandomForest
 31268,53,Private,9,Married-civ-spouse,Exec-managerial,Husband,White,Male,45,<=50K,Colorado,>50K,RandomForest
@@ -7521,7 +7521,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 31788,18,Private,7,Never-married,Other-service,Own-child,White,Female,20,<=50K,North Dakota,<=50K,RandomForest
 31790,60,Private,9,Married-civ-spouse,Adm-clerical,Husband,White,Male,40,<=50K,Idaho,>50K,RandomForest
 31794,26,Private,12,Never-married,Other-service,Not-in-family,White,Male,40,<=50K,Montana,<=50K,RandomForest
-31797,58,Private,10,Married-civ-spouse,Sales,Husband,White,Male,48,<=50K,Alaska,>50K,RandomForest
+31797,58,Private,10,Married-civ-spouse,Sales,Husband,White,Male,48,<=50K,Alaska,<=50K,RandomForest
 31804,36,Private,8,Never-married,Transport-moving,Not-in-family,Asian-Pac-Islander,Male,45,<=50K,New York,<=50K,RandomForest
 31807,29,Private,10,Married-civ-spouse,Exec-managerial,Husband,White,Male,48,<=50K,California,<=50K,RandomForest
 31814,33,Private,12,Married-civ-spouse,Protective-serv,Husband,White,Male,40,<=50K,West Virginia,>50K,RandomForest
@@ -7561,7 +7561,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 31994,50,Private,13,Separated,Sales,Not-in-family,White,Male,40,>50K,Maryland,<=50K,RandomForest
 32000,32,Private,10,Never-married,Adm-clerical,Not-in-family,White,Female,60,<=50K,Washington,<=50K,RandomForest
 32002,55,Private,9,Divorced,Adm-clerical,Unmarried,White,Female,40,<=50K,Hawaii,<=50K,RandomForest
-32004,25,Private,10,Married-civ-spouse,Adm-clerical,Wife,White,Female,40,<=50K,Hawaii,>50K,RandomForest
+32004,25,Private,10,Married-civ-spouse,Adm-clerical,Wife,White,Female,40,<=50K,Hawaii,<=50K,RandomForest
 32008,45,Private,9,Married-civ-spouse,Transport-moving,Husband,White,Male,45,<=50K,Colorado,<=50K,RandomForest
 32016,22,Private,10,Never-married,Adm-clerical,Other-relative,White,Male,40,<=50K,Nebraska,<=50K,RandomForest
 32020,25,Local-gov,13,Never-married,Prof-specialty,Own-child,White,Female,40,<=50K,Hawaii,<=50K,RandomForest
@@ -7607,7 +7607,7 @@ index,age,workclass,education_num,marital_status,occupation,relationship,race,se
 32211,42,Local-gov,13,Divorced,Prof-specialty,Unmarried,Black,Female,30,<=50K,Texas,<=50K,RandomForest
 32220,41,Local-gov,9,Married-civ-spouse,Craft-repair,Husband,White,Male,40,<=50K,Utah,<=50K,RandomForest
 32223,19,Private,10,Never-married,Sales,Own-child,White,Female,30,<=50K,Nevada,<=50K,RandomForest
-32225,50,Private,9,Married-civ-spouse,Handlers-cleaners,Husband,White,Male,45,<=50K,Alaska,<=50K,RandomForest
+32225,50,Private,9,Married-civ-spouse,Handlers-cleaners,Husband,White,Male,45,<=50K,Alaska,>50K,RandomForest
 32227,46,Private,9,Divorced,Machine-op-inspct,Unmarried,White,Male,38,<=50K,Massachusetts,<=50K,RandomForest
 32239,41,Self-emp-inc,9,Married-civ-spouse,Farming-fishing,Husband,White,Male,50,<=50K,Massachusetts,<=50K,RandomForest
 32240,22,State-gov,10,Married-civ-spouse,Adm-clerical,Wife,White,Female,20,<=50K,Colorado,<=50K,RandomForest
