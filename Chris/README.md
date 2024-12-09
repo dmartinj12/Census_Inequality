@@ -1,4 +1,6 @@
-## Data Analytics Final Group Project 
+## George Washington University Data Analytics Bootcamp
+
+## Final Group Project 
 
 # Census Inequality - Analyzing and Modeling Census Income
 
@@ -6,7 +8,7 @@
 
 ##  Objective
 
-Create machine learning models utilizing the Census Income dataset to predict the  outcome of personal income is either greater than $50K or not based on the features in the dataset.
+Create machine learning models utilizing the Census Income dataset to predict the outcome of personal income is either greater than $50K or not based on the features in the dataset.
 
 ## Data
 
@@ -22,49 +24,54 @@ The Adult Census Income dataset is a rich resource for understanding the socio-e
 
 ## Data Preprocessing
 
-Before running our models, the data was cleanesed:
-    - Analyzed the following dataset features and target:
-        - age
-        - workclass
-        - fnlwgt
-        - education
-        - education_num
-        - marital_status
-        - occupation
-        - relationship
-        - race
-        - sex
-        - capital_gain
-        - capital_loss
-        - hours_per_week
-        - native_country
-        - `income` (Target Outcome)
+Before running our models, the data was cleansed:
 
-    - The following features were dropped:
-        - education - reduntant string value that enducation_num was better in representing
-        - capital_gain - > 90% were 0
-        - capital_loss - > 90% were 0
-        - native_country - > 90% were U.S. 
+[Jupyter Notebook Preprocessing](Chris/PreprocessingAnalysis.ipynb)
 
-## machine Learning Models
+Chris/DT_Model.ipynb
+* Analyzed the following dataset features and target:
+    * age
+    * workclass
+    * fnlwgt
+    * education
+    * education_num
+    * marital_status
+    * occupation
+    * relationship
+    * race
+    * sex
+    * capital_gain
+    * capital_loss
+    * hours_per_week
+    * native_country
+    * `income` (Target Outcome)
+
+* The following features were dropped:
+    * education - redundant string value that education_num was better in representing
+    * capital_gain - > 90% were 0
+    * capital_loss - > 90% were 0
+    * native_country - > 90% were U.S. 
+
+## Machine Learning Models
 
 In Python, we utilized the following machine learning models to analyze the Adult Census Income dataset:
-
-    - K Nearest Neigbor
-    - Decision Tree
-    - Random Forest
-    - Gradient Boosting
-    - Logistic Regression
-    - Neural Network
+ 
+* K Nearest Neighbor - [PredictiveDawson.ipynb](PredictiveDawson.ipynb)
+* Decision Tree - [DT_Model.ipynb](DT_Model.ipynb)
+* Random Forest - [DT_Model.ipynb](RandomForest.ipynb)
+* Gradient Boosting - [DT_Model.ipynb](GradientBoosting.ipynb)
+* Logistic Regression - [DT_Model.ipynb](LogisticRegression.ipynb)
+* Neural Network - [NeuralNetwork.ipynb](NeuralNetwork.ipynb)
+* Principal Component Analysis - [PCA.ipynb](PCA.ipynb)
 
 ## Visualizations
 
-The model prediction results, python visualizations were generated than were posted to a tableau dashboard.
+The model prediction results, python visualizations were generated and then were posted to a tableau dashboard.
 
 ###[Link to website]()
 
 ## Team Members
-- Dawson Martin-Jones
-- Daniel Montano
-- Gboyega Adega
-- Christopher Purcell
+* Dawson Martin-Jones
+* Daniel Montano
+* Gboyega Adega
+* Christopher Purcell
