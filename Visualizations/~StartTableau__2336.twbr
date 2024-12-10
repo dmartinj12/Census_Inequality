@@ -1,0 +1,2559 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column alias='Actual' caption='Actual vs Models' datatype='real' name='[Parameter 1]' param-domain-type='list' role='measure' type='quantitative' value='1.'>
+        <calculation class='tableau' formula='1.' />
+        <aliases>
+          <alias key='1.' value='Actual' />
+          <alias key='2.' value='KNeighbors' />
+          <alias key='3.' value='RandomForest' />
+          <alias key='4.' value='Neural Network' />
+          <alias key='5.' value='Gradient' />
+          <alias key='6.' value='Decision Tree' />
+          <alias key='7.' value='Logistic Regression' />
+        </aliases>
+        <members>
+          <member alias='Actual' value='1.' />
+          <member alias='KNeighbors' value='2.' />
+          <member alias='RandomForest' value='3.' />
+          <member alias='Neural Network' value='4.' />
+          <member alias='Gradient' value='5.' />
+          <member alias='Decision Tree' value='6.' />
+          <member alias='Logistic Regression' value='7.' />
+        </members>
+      </column>
+    </datasource>
+    <datasource caption='mergedClassificationReport' inline='true' name='federated.0hbiyzi1lybsei1egp0q90dhwz3y' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='mergedClassificationReport' name='textscan.0tb1b3d18637s41epc7qp0kts9su'>
+            <connection class='textscan' directory='C:/Users/marti/Documents/mygithub/Census_Inequality/Data' filename='mergedClassificationReport.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0tb1b3d18637s41epc7qp0kts9su' name='mergedClassificationReport.csv' table='[mergedClassificationReport#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='class' ordinal='1' />
+            <column datatype='real' name='precision' ordinal='2' />
+            <column datatype='real' name='recall' ordinal='3' />
+            <column datatype='real' name='f1-score' ordinal='4' />
+            <column datatype='integer' name='support' ordinal='5' />
+            <column datatype='string' name='model' ordinal='6' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[mergedClassificationReport.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[mergedClassificationReport.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[mergedClassificationReport.csv_0EBA122F2BC04757B6153AF531C99C37]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>class</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[class]</local-name>
+            <parent-name>[mergedClassificationReport.csv]</parent-name>
+            <remote-alias>class</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[mergedClassificationReport.csv_0EBA122F2BC04757B6153AF531C99C37]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>precision</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[precision]</local-name>
+            <parent-name>[mergedClassificationReport.csv]</parent-name>
+            <remote-alias>precision</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[mergedClassificationReport.csv_0EBA122F2BC04757B6153AF531C99C37]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>recall</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[recall]</local-name>
+            <parent-name>[mergedClassificationReport.csv]</parent-name>
+            <remote-alias>recall</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[mergedClassificationReport.csv_0EBA122F2BC04757B6153AF531C99C37]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>f1-score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[f1-score]</local-name>
+            <parent-name>[mergedClassificationReport.csv]</parent-name>
+            <remote-alias>f1-score</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[mergedClassificationReport.csv_0EBA122F2BC04757B6153AF531C99C37]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>support</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[support]</local-name>
+            <parent-name>[mergedClassificationReport.csv]</parent-name>
+            <remote-alias>support</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[mergedClassificationReport.csv_0EBA122F2BC04757B6153AF531C99C37]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>model</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[model]</local-name>
+            <parent-name>[mergedClassificationReport.csv]</parent-name>
+            <remote-alias>model</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[mergedClassificationReport.csv_0EBA122F2BC04757B6153AF531C99C37]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='mergedClassificationReport.csv' datatype='table' name='[__tableau_internal_object_id__].[mergedClassificationReport.csv_0EBA122F2BC04757B6153AF531C99C37]' role='measure' type='quantitative' />
+      <column caption='Class' datatype='string' name='[class]' role='dimension' type='nominal' />
+      <column caption='F1-Score' datatype='real' name='[f1-score]' role='measure' type='quantitative' />
+      <column caption='Model' datatype='string' name='[model]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Precision' datatype='real' name='[precision]' role='dimension' type='ordinal' />
+      <column caption='Recall' datatype='real' name='[recall]' role='measure' type='quantitative' />
+      <column caption='Support' datatype='integer' name='[support]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/marti/AppData/Local/Temp/TableauTemp/#TableauTemp_1wbl17z0m1kewo1dsgm0f1um6vhw.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/09/2024 09:55:52 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>mergedClassificationReport.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[mergedClassificationReport.csv_0EBA122F2BC04757B6153AF531C99C37]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>class</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[class]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>class</remote-alias>
+              <ordinal>1</ordinal>
+              <family>mergedClassificationReport.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[mergedClassificationReport.csv_0EBA122F2BC04757B6153AF531C99C37]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>precision</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[precision]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>precision</remote-alias>
+              <ordinal>2</ordinal>
+              <family>mergedClassificationReport.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[mergedClassificationReport.csv_0EBA122F2BC04757B6153AF531C99C37]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>recall</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[recall]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>recall</remote-alias>
+              <ordinal>3</ordinal>
+              <family>mergedClassificationReport.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[mergedClassificationReport.csv_0EBA122F2BC04757B6153AF531C99C37]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>f1-score</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[f1-score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>f1-score</remote-alias>
+              <ordinal>4</ordinal>
+              <family>mergedClassificationReport.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[mergedClassificationReport.csv_0EBA122F2BC04757B6153AF531C99C37]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>support</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[support]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>support</remote-alias>
+              <ordinal>5</ordinal>
+              <family>mergedClassificationReport.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[mergedClassificationReport.csv_0EBA122F2BC04757B6153AF531C99C37]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>model</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[model]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>model</remote-alias>
+              <ordinal>6</ordinal>
+              <family>mergedClassificationReport.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[mergedClassificationReport.csv_0EBA122F2BC04757B6153AF531C99C37]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='mergedClassificationReport.csv' id='mergedClassificationReport.csv_0EBA122F2BC04757B6153AF531C99C37'>
+            <properties context=''>
+              <relation connection='textscan.0tb1b3d18637s41epc7qp0kts9su' name='mergedClassificationReport.csv' table='[mergedClassificationReport#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='class' ordinal='1' />
+                  <column datatype='real' name='precision' ordinal='2' />
+                  <column datatype='real' name='recall' ordinal='3' />
+                  <column datatype='real' name='f1-score' ordinal='4' />
+                  <column datatype='integer' name='support' ordinal='5' />
+                  <column datatype='string' name='model' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='mergedDataFrame' inline='true' name='federated.0gxte8z0r8dzn6154zg4v0vc5ny1' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='mergedDataFrame' name='textscan.0l7enpv0xbo6ki0zvcweh12mlpw1'>
+            <connection class='textscan' directory='C:/Users/marti/Documents/mygithub/Census_Inequality/Data' filename='mergedDataFrame.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0l7enpv0xbo6ki0zvcweh12mlpw1' name='mergedDataFrame.csv' table='[mergedDataFrame#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='index' ordinal='1' />
+            <column datatype='integer' name='age' ordinal='2' />
+            <column datatype='string' name='workclass' ordinal='3' />
+            <column datatype='integer' name='education_num' ordinal='4' />
+            <column datatype='string' name='marital_status' ordinal='5' />
+            <column datatype='string' name='occupation' ordinal='6' />
+            <column datatype='string' name='relationship' ordinal='7' />
+            <column datatype='string' name='race' ordinal='8' />
+            <column datatype='string' name='sex' ordinal='9' />
+            <column datatype='integer' name='hours_per_week' ordinal='10' />
+            <column datatype='string' name='income' ordinal='11' />
+            <column datatype='string' name='state' ordinal='12' />
+            <column datatype='real' name='Results' ordinal='13' />
+            <column datatype='string' name='Model' ordinal='14' />
+            <column datatype='string' name='class' ordinal='15' />
+            <column datatype='real' name='precision' ordinal='16' />
+            <column datatype='real' name='recall' ordinal='17' />
+            <column datatype='real' name='f1-score' ordinal='18' />
+            <column datatype='real' name='support' ordinal='19' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[mergedDataFrame.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[mergedDataFrame.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[mergedDataFrame.csv_B817733902194375B40E88F84DE71CBA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>index</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[index]</local-name>
+            <parent-name>[mergedDataFrame.csv]</parent-name>
+            <remote-alias>index</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[mergedDataFrame.csv_B817733902194375B40E88F84DE71CBA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[mergedDataFrame.csv]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[mergedDataFrame.csv_B817733902194375B40E88F84DE71CBA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>workclass</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[workclass]</local-name>
+            <parent-name>[mergedDataFrame.csv]</parent-name>
+            <remote-alias>workclass</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[mergedDataFrame.csv_B817733902194375B40E88F84DE71CBA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>education_num</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[education_num]</local-name>
+            <parent-name>[mergedDataFrame.csv]</parent-name>
+            <remote-alias>education_num</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[mergedDataFrame.csv_B817733902194375B40E88F84DE71CBA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>marital_status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[marital_status]</local-name>
+            <parent-name>[mergedDataFrame.csv]</parent-name>
+            <remote-alias>marital_status</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[mergedDataFrame.csv_B817733902194375B40E88F84DE71CBA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>occupation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[occupation]</local-name>
+            <parent-name>[mergedDataFrame.csv]</parent-name>
+            <remote-alias>occupation</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[mergedDataFrame.csv_B817733902194375B40E88F84DE71CBA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>relationship</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[relationship]</local-name>
+            <parent-name>[mergedDataFrame.csv]</parent-name>
+            <remote-alias>relationship</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[mergedDataFrame.csv_B817733902194375B40E88F84DE71CBA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>race</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[race]</local-name>
+            <parent-name>[mergedDataFrame.csv]</parent-name>
+            <remote-alias>race</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[mergedDataFrame.csv_B817733902194375B40E88F84DE71CBA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sex</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sex]</local-name>
+            <parent-name>[mergedDataFrame.csv]</parent-name>
+            <remote-alias>sex</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[mergedDataFrame.csv_B817733902194375B40E88F84DE71CBA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hours_per_week</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[hours_per_week]</local-name>
+            <parent-name>[mergedDataFrame.csv]</parent-name>
+            <remote-alias>hours_per_week</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[mergedDataFrame.csv_B817733902194375B40E88F84DE71CBA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>income</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[income]</local-name>
+            <parent-name>[mergedDataFrame.csv]</parent-name>
+            <remote-alias>income</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[mergedDataFrame.csv_B817733902194375B40E88F84DE71CBA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[mergedDataFrame.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[mergedDataFrame.csv_B817733902194375B40E88F84DE71CBA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Results</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Results]</local-name>
+            <parent-name>[mergedDataFrame.csv]</parent-name>
+            <remote-alias>Results</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[mergedDataFrame.csv_B817733902194375B40E88F84DE71CBA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Model</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Model]</local-name>
+            <parent-name>[mergedDataFrame.csv]</parent-name>
+            <remote-alias>Model</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[mergedDataFrame.csv_B817733902194375B40E88F84DE71CBA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>class</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[class]</local-name>
+            <parent-name>[mergedDataFrame.csv]</parent-name>
+            <remote-alias>class</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[mergedDataFrame.csv_B817733902194375B40E88F84DE71CBA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>precision</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[precision]</local-name>
+            <parent-name>[mergedDataFrame.csv]</parent-name>
+            <remote-alias>precision</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[mergedDataFrame.csv_B817733902194375B40E88F84DE71CBA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>recall</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[recall]</local-name>
+            <parent-name>[mergedDataFrame.csv]</parent-name>
+            <remote-alias>recall</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[mergedDataFrame.csv_B817733902194375B40E88F84DE71CBA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>f1-score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[f1-score]</local-name>
+            <parent-name>[mergedDataFrame.csv]</parent-name>
+            <remote-alias>f1-score</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[mergedDataFrame.csv_B817733902194375B40E88F84DE71CBA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>support</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[support]</local-name>
+            <parent-name>[mergedDataFrame.csv]</parent-name>
+            <remote-alias>support</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[mergedDataFrame.csv_B817733902194375B40E88F84DE71CBA]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='0; Precision' datatype='real' name='[1; Precision (copy)_164381409900482565]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [class] = &quot;0&quot; THEN [precision] END' />
+      </column>
+      <column caption='1; Recall' datatype='real' name='[1; Precision (copy)_164381409900552198]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [class] = &quot;1&quot; THEN [recall] END' />
+      </column>
+      <column caption='0; Recall' datatype='real' name='[1; Recall (copy)_164381409900654599]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [class] = &quot;0&quot; THEN [recall] END' />
+      </column>
+      <column caption='p. % pop &gt; 50k' datatype='real' datatype-customized='true' name='[Calculation_164381408556269568]' role='measure' type='ordinal'>
+        <calculation class='tableau' formula='CASE [Parameters].[Parameter 1]&#13;&#10;WHEN 1 THEN SUM(IF [income] = &quot;&gt;50K&quot; THEN 1 ELSE 0 END) / COUNT([income]) * 100&#13;&#10;WHEN 2 THEN SUM(IF [Results] = 1.0 THEN 1 ELSE 0 END) / COUNT([Results]) * 100&#13;&#10;WHEN 3 THEN SUM(IF [Results] = 1.0 THEN 1 ELSE 0 END) / COUNT([Results]) * 100&#13;&#10;WHEN 4 THEN SUM(IF [Results] = 1.0 THEN 1 ELSE 0 END) / COUNT([Results]) * 100&#13;&#10;WHEN 5 THEN SUM(IF [Results] = 1.0 THEN 1 ELSE 0 END) / COUNT([Results]) * 100&#13;&#10;WHEN 6 THEN SUM(IF [Results] = 1.0 THEN 1 ELSE 0 END) / COUNT([Results]) * 100&#13;&#10;WHEN 7 THEN SUM(IF [Results] = 1.0 THEN 1 ELSE 0 END) / COUNT([Results]) * 100&#13;&#10;END' />
+      </column>
+      <column caption='Accuracy' datatype='real' name='[Calculation_164381409899671555]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [class] = &quot;accuracy&quot; THEN [f1-score] END' />
+      </column>
+      <column caption='1; Precision' datatype='real' name='[Calculation_164381409900011524]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [class] = &quot;1&quot; THEN [precision] END' />
+      </column>
+      <column caption='test' datatype='real' name='[Calculation_164381409919082505]' role='measure' type='ordinal'>
+        <calculation class='tableau' formula='SUM(IF [income] = &quot;&gt;50K&quot; THEN 1 ELSE 0 END) / COUNT([income]) * 100' />
+      </column>
+      <column caption='Model2' datatype='string' name='[Model]' role='dimension' type='nominal' />
+      <column datatype='real' hidden='true' name='[Unnamed: 0]' role='measure' type='quantitative' />
+      <column caption='mergedDataFrame.csv' datatype='table' name='[__tableau_internal_object_id__].[mergedDataFrame.csv_B817733902194375B40E88F84DE71CBA]' role='measure' type='quantitative' />
+      <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+      <column caption='Class' datatype='string' name='[class]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;0&quot;' value='Under 50k' />
+          <alias key='&quot;1&quot;' value='Over 50k' />
+        </aliases>
+      </column>
+      <column caption='Education Num' datatype='integer' name='[education_num]' role='dimension' type='ordinal'>
+        <aliases>
+          <alias key='1' value='None' />
+          <alias key='2' value='2nd Grade' />
+          <alias key='3' value='3rd Grade' />
+          <alias key='4' value='4th Grade' />
+          <alias key='5' value='5th Grade' />
+          <alias key='6' value='6th Grade' />
+          <alias key='7' value='7th Grade' />
+          <alias key='8' value='8th Grade' />
+          <alias key='9' value='9th Grade' />
+          <alias key='10' value='10th Grade' />
+          <alias key='11' value='11th Grade' />
+          <alias key='12' value='12th Grade' />
+          <alias key='13' value='Associates' />
+          <alias key='14' value='Bachelors' />
+          <alias key='15' value='Masters' />
+          <alias key='16' value='Doctorate' />
+        </aliases>
+      </column>
+      <column caption='F1-Score' datatype='real' name='[f1-score]' role='measure' type='quantitative' />
+      <column caption='Hours Per Week' datatype='integer' name='[hours_per_week]' role='dimension' type='quantitative' />
+      <column caption='Income' datatype='string' name='[income]' role='dimension' type='nominal' />
+      <column caption='Index' datatype='integer' name='[index]' role='measure' type='quantitative' />
+      <column caption='Marital Status' datatype='string' name='[marital_status]' role='dimension' type='nominal' />
+      <column caption='Occupation' datatype='string' name='[occupation]' role='dimension' type='nominal' />
+      <column caption='Precision' datatype='real' name='[precision]' role='measure' type='quantitative' />
+      <column caption='Race' datatype='string' name='[race]' role='dimension' type='nominal' />
+      <column caption='Recall' datatype='real' name='[recall]' role='measure' type='quantitative' />
+      <column caption='Relationship' datatype='string' name='[relationship]' role='dimension' type='nominal' />
+      <column caption='Sex' datatype='string' name='[sex]' role='dimension' type='nominal' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Support' datatype='real' name='[support]' role='measure' type='quantitative' />
+      <column caption='Workclass' datatype='string' name='[workclass]' role='dimension' type='nominal' />
+      <column-instance column='[1; Precision (copy)_164381409900482565]' derivation='None' name='[none:1; Precision (copy)_164381409900482565:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[class]' derivation='None' name='[none:class:nk]' pivot='key' type='nominal' />
+      <column-instance column='[sex]' derivation='None' name='[none:sex:nk]' pivot='key' type='nominal' />
+      <group caption='Action (Race)' hidden='true' name='[Action (Race)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[race]' />
+        </groupfilter>
+      </group>
+      <group hidden='true' name='[Exclusions (0; Precision,Class)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:1; Precision (copy)_164381409900482565:qk]' />
+          <groupfilter function='level-members' level='[none:class:nk]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/marti/AppData/Local/Temp/TableauTemp/#TableauTemp_0y40akv00j8v3p17obgi5163oxn2.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/10/2024 01:40:57 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>mergedDataFrame.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>265266</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[mergedDataFrame.csv_B817733902194375B40E88F84DE71CBA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>index</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[index]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>index</remote-alias>
+              <ordinal>1</ordinal>
+              <family>mergedDataFrame.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>44341</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[mergedDataFrame.csv_B817733902194375B40E88F84DE71CBA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>age</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>age</remote-alias>
+              <ordinal>2</ordinal>
+              <family>mergedDataFrame.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>130</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[mergedDataFrame.csv_B817733902194375B40E88F84DE71CBA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>workclass</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[workclass]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>workclass</remote-alias>
+              <ordinal>3</ordinal>
+              <family>mergedDataFrame.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[mergedDataFrame.csv_B817733902194375B40E88F84DE71CBA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>education_num</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[education_num]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>education_num</remote-alias>
+              <ordinal>4</ordinal>
+              <family>mergedDataFrame.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[mergedDataFrame.csv_B817733902194375B40E88F84DE71CBA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>marital_status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[marital_status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>marital_status</remote-alias>
+              <ordinal>5</ordinal>
+              <family>mergedDataFrame.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[mergedDataFrame.csv_B817733902194375B40E88F84DE71CBA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>occupation</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[occupation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>occupation</remote-alias>
+              <ordinal>6</ordinal>
+              <family>mergedDataFrame.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[mergedDataFrame.csv_B817733902194375B40E88F84DE71CBA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>relationship</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[relationship]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>relationship</remote-alias>
+              <ordinal>7</ordinal>
+              <family>mergedDataFrame.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[mergedDataFrame.csv_B817733902194375B40E88F84DE71CBA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>race</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[race]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>race</remote-alias>
+              <ordinal>8</ordinal>
+              <family>mergedDataFrame.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[mergedDataFrame.csv_B817733902194375B40E88F84DE71CBA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sex</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[sex]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sex</remote-alias>
+              <ordinal>9</ordinal>
+              <family>mergedDataFrame.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[mergedDataFrame.csv_B817733902194375B40E88F84DE71CBA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>hours_per_week</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[hours_per_week]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>hours_per_week</remote-alias>
+              <ordinal>10</ordinal>
+              <family>mergedDataFrame.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>188</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[mergedDataFrame.csv_B817733902194375B40E88F84DE71CBA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>income</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[income]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>income</remote-alias>
+              <ordinal>11</ordinal>
+              <family>mergedDataFrame.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[mergedDataFrame.csv_B817733902194375B40E88F84DE71CBA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>state</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[state]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>state</remote-alias>
+              <ordinal>12</ordinal>
+              <family>mergedDataFrame.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>50</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[mergedDataFrame.csv_B817733902194375B40E88F84DE71CBA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Results</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Results]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Results</remote-alias>
+              <ordinal>13</ordinal>
+              <family>mergedDataFrame.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[mergedDataFrame.csv_B817733902194375B40E88F84DE71CBA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Model</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Model]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Model</remote-alias>
+              <ordinal>14</ordinal>
+              <family>mergedDataFrame.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[mergedDataFrame.csv_B817733902194375B40E88F84DE71CBA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>class</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[class]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>class</remote-alias>
+              <ordinal>15</ordinal>
+              <family>mergedDataFrame.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[mergedDataFrame.csv_B817733902194375B40E88F84DE71CBA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>precision</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[precision]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>precision</remote-alias>
+              <ordinal>16</ordinal>
+              <family>mergedDataFrame.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[mergedDataFrame.csv_B817733902194375B40E88F84DE71CBA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>recall</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[recall]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>recall</remote-alias>
+              <ordinal>17</ordinal>
+              <family>mergedDataFrame.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[mergedDataFrame.csv_B817733902194375B40E88F84DE71CBA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>f1-score</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[f1-score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>f1-score</remote-alias>
+              <ordinal>18</ordinal>
+              <family>mergedDataFrame.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[mergedDataFrame.csv_B817733902194375B40E88F84DE71CBA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>support</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[support]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>support</remote-alias>
+              <ordinal>19</ordinal>
+              <family>mergedDataFrame.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[mergedDataFrame.csv_B817733902194375B40E88F84DE71CBA]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:sex:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Female&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Male&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='Parameters'>
+        <column alias='Actual' caption='Actual vs Models' datatype='real' name='[Parameter 1]' param-domain-type='list' role='measure' type='quantitative' value='1.'>
+          <calculation class='tableau' formula='1.' />
+          <aliases>
+            <alias key='1.' value='Actual' />
+            <alias key='2.' value='KNeighbors' />
+            <alias key='3.' value='RandomForest' />
+            <alias key='4.' value='Neural Network' />
+            <alias key='5.' value='Gradient' />
+            <alias key='6.' value='Decision Tree' />
+            <alias key='7.' value='Logistic Regression' />
+          </aliases>
+        </column>
+      </datasource-dependencies>
+      <object-graph>
+        <objects>
+          <object caption='mergedDataFrame.csv' id='mergedDataFrame.csv_B817733902194375B40E88F84DE71CBA'>
+            <properties context=''>
+              <relation connection='textscan.0l7enpv0xbo6ki0zvcweh12mlpw1' name='mergedDataFrame.csv' table='[mergedDataFrame#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='index' ordinal='1' />
+                  <column datatype='integer' name='age' ordinal='2' />
+                  <column datatype='string' name='workclass' ordinal='3' />
+                  <column datatype='integer' name='education_num' ordinal='4' />
+                  <column datatype='string' name='marital_status' ordinal='5' />
+                  <column datatype='string' name='occupation' ordinal='6' />
+                  <column datatype='string' name='relationship' ordinal='7' />
+                  <column datatype='string' name='race' ordinal='8' />
+                  <column datatype='string' name='sex' ordinal='9' />
+                  <column datatype='integer' name='hours_per_week' ordinal='10' />
+                  <column datatype='string' name='income' ordinal='11' />
+                  <column datatype='string' name='state' ordinal='12' />
+                  <column datatype='real' name='Results' ordinal='13' />
+                  <column datatype='string' name='Model' ordinal='14' />
+                  <column datatype='string' name='class' ordinal='15' />
+                  <column datatype='real' name='precision' ordinal='16' />
+                  <column datatype='real' name='recall' ordinal='17' />
+                  <column datatype='real' name='f1-score' ordinal='18' />
+                  <column datatype='real' name='support' ordinal='19' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.0gxte8z0r8dzn6154zg4v0vc5ny1'>
+      <datasources>
+        <datasource caption='mergedDataFrame' name='federated.0gxte8z0r8dzn6154zg4v0vc5ny1' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0gxte8z0r8dzn6154zg4v0vc5ny1'>
+        <column caption='Model2' datatype='string' name='[Model]' role='dimension' type='nominal' />
+        <column-instance column='[Model]' derivation='None' name='[none:Model:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:Model:nk]'>
+        <groupfilter function='member' level='[none:Model:nk]' member='&quot;NeuralNetwork&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Age'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='mergedDataFrame' name='federated.0gxte8z0r8dzn6154zg4v0vc5ny1' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column alias='Actual' caption='Actual vs Models' datatype='real' name='[Parameter 1]' param-domain-type='list' role='measure' type='quantitative' value='1.'>
+              <calculation class='tableau' formula='1.' />
+              <aliases>
+                <alias key='1.' value='Actual' />
+                <alias key='2.' value='KNeighbors' />
+                <alias key='3.' value='RandomForest' />
+                <alias key='4.' value='Neural Network' />
+                <alias key='5.' value='Gradient' />
+                <alias key='6.' value='Decision Tree' />
+                <alias key='7.' value='Logistic Regression' />
+              </aliases>
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0gxte8z0r8dzn6154zg4v0vc5ny1'>
+            <column caption='p. % pop &gt; 50k' datatype='real' datatype-customized='true' name='[Calculation_164381408556269568]' role='measure' type='ordinal'>
+              <calculation class='tableau' formula='CASE [Parameters].[Parameter 1]&#13;&#10;WHEN 1 THEN SUM(IF [income] = &quot;&gt;50K&quot; THEN 1 ELSE 0 END) / COUNT([income]) * 100&#13;&#10;WHEN 2 THEN SUM(IF [Results] = 1.0 THEN 1 ELSE 0 END) / COUNT([Results]) * 100&#13;&#10;WHEN 3 THEN SUM(IF [Results] = 1.0 THEN 1 ELSE 0 END) / COUNT([Results]) * 100&#13;&#10;WHEN 4 THEN SUM(IF [Results] = 1.0 THEN 1 ELSE 0 END) / COUNT([Results]) * 100&#13;&#10;WHEN 5 THEN SUM(IF [Results] = 1.0 THEN 1 ELSE 0 END) / COUNT([Results]) * 100&#13;&#10;WHEN 6 THEN SUM(IF [Results] = 1.0 THEN 1 ELSE 0 END) / COUNT([Results]) * 100&#13;&#10;WHEN 7 THEN SUM(IF [Results] = 1.0 THEN 1 ELSE 0 END) / COUNT([Results]) * 100&#13;&#10;END' />
+            </column>
+            <column caption='Model2' datatype='string' name='[Model]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Results]' role='measure' type='quantitative' />
+            <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+            <column caption='Income' datatype='string' name='[income]' role='dimension' type='nominal' />
+            <column-instance column='[Model]' derivation='None' name='[none:Model:nk]' pivot='key' type='nominal' />
+            <column-instance column='[age]' derivation='None' name='[none:age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_164381408556269568]' derivation='User' name='[usr:Calculation_164381408556269568:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:Model:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]' value='false' />
+            <format attr='break-on-special' field='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]' value='false' />
+            <format attr='omit-on-special' field='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:age:qk]' value='false' />
+            <format attr='break-on-special' field='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:age:qk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:age:qk]' value='false' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:Model:nk]' value='Model'>
+              <formatted-text>
+                <run>Model</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]</rows>
+        <cols>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:age:qk]</cols>
+      </table>
+      <simple-id uuid='{7985DDE9-FECE-4FA0-AECB-24E5955D1D02}' />
+    </worksheet>
+    <worksheet name='ClassificationTable'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='mergedDataFrame' name='federated.0gxte8z0r8dzn6154zg4v0vc5ny1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gxte8z0r8dzn6154zg4v0vc5ny1'>
+            <column caption='0; Precision' datatype='real' name='[1; Precision (copy)_164381409900482565]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [class] = &quot;0&quot; THEN [precision] END' />
+            </column>
+            <column caption='1; Recall' datatype='real' name='[1; Precision (copy)_164381409900552198]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [class] = &quot;1&quot; THEN [recall] END' />
+            </column>
+            <column caption='0; Recall' datatype='real' name='[1; Recall (copy)_164381409900654599]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [class] = &quot;0&quot; THEN [recall] END' />
+            </column>
+            <column caption='Accuracy' datatype='real' name='[Calculation_164381409899671555]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [class] = &quot;accuracy&quot; THEN [f1-score] END' />
+            </column>
+            <column caption='1; Precision' datatype='real' name='[Calculation_164381409900011524]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [class] = &quot;1&quot; THEN [precision] END' />
+            </column>
+            <column caption='Model2' datatype='string' name='[Model]' role='dimension' type='nominal' />
+            <column caption='Class' datatype='string' name='[class]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;0&quot;' value='Under 50k' />
+                <alias key='&quot;1&quot;' value='Over 50k' />
+              </aliases>
+            </column>
+            <column caption='F1-Score' datatype='real' name='[f1-score]' role='measure' type='quantitative' />
+            <column-instance column='[1; Precision (copy)_164381409900482565]' derivation='None' name='[none:1; Precision (copy)_164381409900482565:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[1; Precision (copy)_164381409900552198]' derivation='None' name='[none:1; Precision (copy)_164381409900552198:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[1; Recall (copy)_164381409900654599]' derivation='None' name='[none:1; Recall (copy)_164381409900654599:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_164381409899671555]' derivation='None' name='[none:Calculation_164381409899671555:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_164381409900011524]' derivation='None' name='[none:Calculation_164381409900011524:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Model]' derivation='None' name='[none:Model:nk]' pivot='key' type='nominal' />
+            <column-instance column='[class]' derivation='None' name='[none:class:nk]' pivot='key' type='nominal' />
+            <column caption='Precision' datatype='real' name='[precision]' role='measure' type='quantitative' />
+            <column caption='Recall' datatype='real' name='[recall]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:class:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:class:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:class:nk]' member='&quot;macro avg&quot;' />
+                <groupfilter function='member' level='[none:class:nk]' member='&quot;N/A&quot;' />
+                <groupfilter function='member' level='[none:class:nk]' member='&quot;weighted avg&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:class:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;0&quot;</bucket>
+              <bucket>&quot;1&quot;</bucket>
+              <bucket>&quot;accuracy&quot;</bucket>
+              <bucket>&quot;macro avg&quot;</bucket>
+              <bucket>&quot;weighted avg&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:Model:nk]</column>
+            <column>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:class:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='143' />
+            <format attr='text-align' field='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:1; Precision (copy)_164381409900482565:qk]' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:1; Precision (copy)_164381409900482565:qk]' value='false' />
+            <format attr='break-on-special' field='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:1; Precision (copy)_164381409900482565:qk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:1; Precision (copy)_164381409900482565:qk]' value='false' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:Model:nk]' value='Model'>
+              <formatted-text>
+                <run>Model</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='7' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:1; Precision (copy)_164381409900482565:qk]' />
+              <text column='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:Calculation_164381409900011524:qk]' />
+              <text column='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:1; Recall (copy)_164381409900654599:qk]' />
+              <text column='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:1; Precision (copy)_164381409900552198:qk]' />
+              <text column='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:Calculation_164381409899671555:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='has-stroke' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:class:nk]</cols>
+      </table>
+      <simple-id uuid='{25D181CF-7025-464F-A106-EFA37195A5A1}' />
+    </worksheet>
+    <worksheet name='Education'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='mergedDataFrame' name='federated.0gxte8z0r8dzn6154zg4v0vc5ny1' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column alias='Actual' caption='Actual vs Models' datatype='real' name='[Parameter 1]' param-domain-type='list' role='measure' type='quantitative' value='1.'>
+              <calculation class='tableau' formula='1.' />
+              <aliases>
+                <alias key='1.' value='Actual' />
+                <alias key='2.' value='KNeighbors' />
+                <alias key='3.' value='RandomForest' />
+                <alias key='4.' value='Neural Network' />
+                <alias key='5.' value='Gradient' />
+                <alias key='6.' value='Decision Tree' />
+                <alias key='7.' value='Logistic Regression' />
+              </aliases>
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0gxte8z0r8dzn6154zg4v0vc5ny1'>
+            <column caption='p. % pop &gt; 50k' datatype='real' datatype-customized='true' name='[Calculation_164381408556269568]' role='measure' type='ordinal'>
+              <calculation class='tableau' formula='CASE [Parameters].[Parameter 1]&#13;&#10;WHEN 1 THEN SUM(IF [income] = &quot;&gt;50K&quot; THEN 1 ELSE 0 END) / COUNT([income]) * 100&#13;&#10;WHEN 2 THEN SUM(IF [Results] = 1.0 THEN 1 ELSE 0 END) / COUNT([Results]) * 100&#13;&#10;WHEN 3 THEN SUM(IF [Results] = 1.0 THEN 1 ELSE 0 END) / COUNT([Results]) * 100&#13;&#10;WHEN 4 THEN SUM(IF [Results] = 1.0 THEN 1 ELSE 0 END) / COUNT([Results]) * 100&#13;&#10;WHEN 5 THEN SUM(IF [Results] = 1.0 THEN 1 ELSE 0 END) / COUNT([Results]) * 100&#13;&#10;WHEN 6 THEN SUM(IF [Results] = 1.0 THEN 1 ELSE 0 END) / COUNT([Results]) * 100&#13;&#10;WHEN 7 THEN SUM(IF [Results] = 1.0 THEN 1 ELSE 0 END) / COUNT([Results]) * 100&#13;&#10;END' />
+            </column>
+            <column caption='Model2' datatype='string' name='[Model]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Results]' role='measure' type='quantitative' />
+            <column caption='Education Num' datatype='integer' name='[education_num]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='1' value='None' />
+                <alias key='2' value='2nd Grade' />
+                <alias key='3' value='3rd Grade' />
+                <alias key='4' value='4th Grade' />
+                <alias key='5' value='5th Grade' />
+                <alias key='6' value='6th Grade' />
+                <alias key='7' value='7th Grade' />
+                <alias key='8' value='8th Grade' />
+                <alias key='9' value='9th Grade' />
+                <alias key='10' value='10th Grade' />
+                <alias key='11' value='11th Grade' />
+                <alias key='12' value='12th Grade' />
+                <alias key='13' value='Associates' />
+                <alias key='14' value='Bachelors' />
+                <alias key='15' value='Masters' />
+                <alias key='16' value='Doctorate' />
+              </aliases>
+            </column>
+            <column caption='Income' datatype='string' name='[income]' role='dimension' type='nominal' />
+            <column-instance column='[Model]' derivation='None' name='[none:Model:nk]' pivot='key' type='nominal' />
+            <column-instance column='[education_num]' derivation='None' name='[none:education_num:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_164381408556269568]' derivation='User' name='[usr:Calculation_164381408556269568:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:Model:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:education_num:ok]' value='102' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:education_num:ok]' value='-90' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]' value='false' />
+            <format attr='break-on-special' field='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:education_num:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]</rows>
+        <cols>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:education_num:ok]</cols>
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:education_num:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:education_num:ok]</field>
+                  <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1</value>
+                <value>0.083333333333333329</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:education_num:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:education_num:ok]</field>
+                  <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2</value>
+                <value>0.073170731707317069</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='2' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:education_num:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:education_num:ok]</field>
+                  <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>3</value>
+                <value>0.0625</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='3' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:education_num:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:education_num:ok]</field>
+                  <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>4</value>
+                <value>0.11194029850746269</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='4' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:education_num:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:education_num:ok]</field>
+                  <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>5</value>
+                <value>0.059829059829059832</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='5' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:education_num:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:education_num:ok]</field>
+                  <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>6</value>
+                <value>0.10849056603773585</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='6' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:education_num:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:education_num:ok]</field>
+                  <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>7</value>
+                <value>0.052631578947368418</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='7' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:education_num:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:education_num:ok]</field>
+                  <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>8</value>
+                <value>0.12149532710280374</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='8' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:education_num:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:education_num:ok]</field>
+                  <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>9</value>
+                <value>0.15306946688206785</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='9' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:education_num:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:education_num:ok]</field>
+                  <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>10</value>
+                <value>0.20046082949308755</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='10' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:education_num:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:education_num:ok]</field>
+                  <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>11</value>
+                <value>0.32276657060518732</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='11' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:education_num:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:education_num:ok]</field>
+                  <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>12</value>
+                <value>0.2788844621513944</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='12' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:education_num:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:education_num:ok]</field>
+                  <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>13</value>
+                <value>0.43719806763285024</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='13' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:education_num:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:education_num:ok]</field>
+                  <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>14</value>
+                <value>0.56812933025404155</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='14' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:education_num:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:education_num:ok]</field>
+                  <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>15</value>
+                <value>0.78832116788321172</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='15' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:education_num:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:education_num:ok]</field>
+                  <field>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>16</value>
+                <value>0.77777777777777779</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{459AFEF9-5FCA-4AF5-B450-9F1A4E61AB91}' />
+    </worksheet>
+    <worksheet name='Gender'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='mergedDataFrame' name='federated.0gxte8z0r8dzn6154zg4v0vc5ny1' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column alias='Actual' caption='Actual vs Models' datatype='real' name='[Parameter 1]' param-domain-type='list' role='measure' type='quantitative' value='1.'>
+              <calculation class='tableau' formula='1.' />
+              <aliases>
+                <alias key='1.' value='Actual' />
+                <alias key='2.' value='KNeighbors' />
+                <alias key='3.' value='RandomForest' />
+                <alias key='4.' value='Neural Network' />
+                <alias key='5.' value='Gradient' />
+                <alias key='6.' value='Decision Tree' />
+                <alias key='7.' value='Logistic Regression' />
+              </aliases>
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0gxte8z0r8dzn6154zg4v0vc5ny1'>
+            <column caption='p. % pop &gt; 50k' datatype='real' datatype-customized='true' name='[Calculation_164381408556269568]' role='measure' type='ordinal'>
+              <calculation class='tableau' formula='CASE [Parameters].[Parameter 1]&#13;&#10;WHEN 1 THEN SUM(IF [income] = &quot;&gt;50K&quot; THEN 1 ELSE 0 END) / COUNT([income]) * 100&#13;&#10;WHEN 2 THEN SUM(IF [Results] = 1.0 THEN 1 ELSE 0 END) / COUNT([Results]) * 100&#13;&#10;WHEN 3 THEN SUM(IF [Results] = 1.0 THEN 1 ELSE 0 END) / COUNT([Results]) * 100&#13;&#10;WHEN 4 THEN SUM(IF [Results] = 1.0 THEN 1 ELSE 0 END) / COUNT([Results]) * 100&#13;&#10;WHEN 5 THEN SUM(IF [Results] = 1.0 THEN 1 ELSE 0 END) / COUNT([Results]) * 100&#13;&#10;WHEN 6 THEN SUM(IF [Results] = 1.0 THEN 1 ELSE 0 END) / COUNT([Results]) * 100&#13;&#10;WHEN 7 THEN SUM(IF [Results] = 1.0 THEN 1 ELSE 0 END) / COUNT([Results]) * 100&#13;&#10;END' />
+            </column>
+            <column caption='Model2' datatype='string' name='[Model]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Results]' role='measure' type='quantitative' />
+            <column caption='Income' datatype='string' name='[income]' role='dimension' type='nominal' />
+            <column-instance column='[Model]' derivation='None' name='[none:Model:nk]' pivot='key' type='nominal' />
+            <column-instance column='[sex]' derivation='None' name='[none:sex:nk]' pivot='key' type='nominal' />
+            <column caption='Sex' datatype='string' name='[sex]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_164381408556269568]' derivation='User' name='[usr:Calculation_164381408556269568:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:sex:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:sex:nk]' />
+              <groupfilter function='member' level='[none:sex:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:Model:nk]</column>
+            <column>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:sex:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]' value='false' />
+            <format attr='break-on-special' field='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]' value='false' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:Model:nk]' value='Model'>
+              <formatted-text>
+                <run>Model</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:sex:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#4e79a7' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]</rows>
+        <cols>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:sex:nk]</cols>
+      </table>
+      <simple-id uuid='{24106878-57FD-4B1B-B690-3459405829C6}' />
+    </worksheet>
+    <worksheet name='Race'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='mergedDataFrame' name='federated.0gxte8z0r8dzn6154zg4v0vc5ny1' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column alias='Actual' caption='Actual vs Models' datatype='real' name='[Parameter 1]' param-domain-type='list' role='measure' type='quantitative' value='1.'>
+              <calculation class='tableau' formula='1.' />
+              <aliases>
+                <alias key='1.' value='Actual' />
+                <alias key='2.' value='KNeighbors' />
+                <alias key='3.' value='RandomForest' />
+                <alias key='4.' value='Neural Network' />
+                <alias key='5.' value='Gradient' />
+                <alias key='6.' value='Decision Tree' />
+                <alias key='7.' value='Logistic Regression' />
+              </aliases>
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0gxte8z0r8dzn6154zg4v0vc5ny1'>
+            <column caption='p. % pop &gt; 50k' datatype='real' datatype-customized='true' name='[Calculation_164381408556269568]' role='measure' type='ordinal'>
+              <calculation class='tableau' formula='CASE [Parameters].[Parameter 1]&#13;&#10;WHEN 1 THEN SUM(IF [income] = &quot;&gt;50K&quot; THEN 1 ELSE 0 END) / COUNT([income]) * 100&#13;&#10;WHEN 2 THEN SUM(IF [Results] = 1.0 THEN 1 ELSE 0 END) / COUNT([Results]) * 100&#13;&#10;WHEN 3 THEN SUM(IF [Results] = 1.0 THEN 1 ELSE 0 END) / COUNT([Results]) * 100&#13;&#10;WHEN 4 THEN SUM(IF [Results] = 1.0 THEN 1 ELSE 0 END) / COUNT([Results]) * 100&#13;&#10;WHEN 5 THEN SUM(IF [Results] = 1.0 THEN 1 ELSE 0 END) / COUNT([Results]) * 100&#13;&#10;WHEN 6 THEN SUM(IF [Results] = 1.0 THEN 1 ELSE 0 END) / COUNT([Results]) * 100&#13;&#10;WHEN 7 THEN SUM(IF [Results] = 1.0 THEN 1 ELSE 0 END) / COUNT([Results]) * 100&#13;&#10;END' />
+            </column>
+            <column caption='Model2' datatype='string' name='[Model]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Results]' role='measure' type='quantitative' />
+            <column caption='Income' datatype='string' name='[income]' role='dimension' type='nominal' />
+            <column-instance column='[Model]' derivation='None' name='[none:Model:nk]' pivot='key' type='nominal' />
+            <column-instance column='[race]' derivation='None' name='[none:race:nk]' pivot='key' type='nominal' />
+            <column caption='Race' datatype='string' name='[race]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_164381408556269568]' derivation='User' name='[usr:Calculation_164381408556269568:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:race:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:race:nk]' />
+              <groupfilter function='member' level='[none:race:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:Model:nk]</column>
+            <column>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:race:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]' value='false' />
+            <format attr='break-on-special' field='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]' value='false' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:Model:nk]' value='Model'>
+              <formatted-text>
+                <run>Model</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:race:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381408556269568:qk]</rows>
+        <cols>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:race:nk]</cols>
+      </table>
+      <simple-id uuid='{3EE86049-6B78-442D-9E60-60E4D6F7A0FB}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='mergedDataFrame' name='federated.0gxte8z0r8dzn6154zg4v0vc5ny1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gxte8z0r8dzn6154zg4v0vc5ny1'>
+            <column caption='test' datatype='real' name='[Calculation_164381409919082505]' role='measure' type='ordinal'>
+              <calculation class='tableau' formula='SUM(IF [income] = &quot;&gt;50K&quot; THEN 1 ELSE 0 END) / COUNT([income]) * 100' />
+            </column>
+            <column caption='Model2' datatype='string' name='[Model]' role='dimension' type='nominal' />
+            <column caption='Income' datatype='string' name='[income]' role='dimension' type='nominal' />
+            <column-instance column='[Model]' derivation='None' name='[none:Model:nk]' pivot='key' type='nominal' />
+            <column-instance column='[race]' derivation='None' name='[none:race:nk]' pivot='key' type='nominal' />
+            <column caption='Race' datatype='string' name='[race]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_164381409919082505]' derivation='User' name='[usr:Calculation_164381409919082505:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:Model:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[usr:Calculation_164381409919082505:qk]</rows>
+        <cols>[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:race:nk]</cols>
+      </table>
+      <simple-id uuid='{E2C0D4BC-70C0-4B36-AB19-A4E5BD5ECD93}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='AgeBoard'>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <datasources>
+        <datasource caption='mergedDataFrame' name='federated.0gxte8z0r8dzn6154zg4v0vc5ny1' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0gxte8z0r8dzn6154zg4v0vc5ny1'>
+        <column caption='Model2' datatype='string' name='[Model]' role='dimension' type='nominal' />
+        <column-instance column='[Model]' derivation='None' name='[none:Model:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='58372' id='3' name='Age' w='92923' x='3538' y='39535' />
+        <zone h='29535' id='4' mode='radiolist' name='Age' param='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:Model:nk]' type-v2='filter' values='database' w='24615' x='1538' y='1860' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='6' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98140' id='5' param='vert' type-v2='layout-flow' w='97538' x='1231' y='930'>
+                <zone h='29535' id='4' mode='dropdown' name='Age' param='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:Model:nk]' type-v2='filter' values='database' w='24615' x='1538' y='1860'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='58372' id='3' is-fixed='true' name='Age' w='92923' x='3538' y='39535'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{7EB2F4F0-40A8-4B1B-9065-EC4DFF91AADF}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='ClassBoard'>
+      <style />
+      <size maxheight='560' maxwidth='750' minheight='560' minwidth='420' sizing-mode='range' />
+      <datasources>
+        <datasource caption='mergedDataFrame' name='federated.0gxte8z0r8dzn6154zg4v0vc5ny1' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0gxte8z0r8dzn6154zg4v0vc5ny1'>
+        <column caption='Model2' datatype='string' name='[Model]' role='dimension' type='nominal' />
+        <column-instance column='[Model]' derivation='None' name='[none:Model:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='37857' id='5' name='ClassificationTable' w='70267' x='3333' y='58929' />
+        <zone h='23036' id='6' type-v2='text' w='15333' x='2800' y='71250'>
+          <formatted-text>
+            <run>Precision&#10;&#10;Recall</run>
+          </formatted-text>
+        </zone>
+        <zone h='41071' id='7' mode='radiolist' name='ClassificationTable' param='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:Model:nk]' type-v2='filter' values='database' w='28267' x='2667' y='4821' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='9' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97142' id='8' param='vert' type-v2='layout-flow' w='97866' x='1067' y='1429'>
+                <zone h='41071' id='7' mode='dropdown' name='ClassificationTable' param='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:Model:nk]' type-v2='filter' values='database' w='28267' x='2667' y='4821'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='212' h='37857' id='5' is-fixed='true' name='ClassificationTable' w='70267' x='3333' y='58929'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='23036' id='6' type-v2='text' w='15333' x='2800' y='71250'>
+                  <formatted-text>
+                    <run>Precision&#10;&#10;Recall</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{D8840638-A248-4E28-87EA-4F139048AD29}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='860' maxwidth='1364' minheight='560' minwidth='420' sizing-mode='range' />
+      <datasources>
+        <datasource caption='mergedDataFrame' name='federated.0gxte8z0r8dzn6154zg4v0vc5ny1' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0gxte8z0r8dzn6154zg4v0vc5ny1'>
+        <column caption='Model2' datatype='string' name='[Model]' role='dimension' type='nominal' />
+        <column-instance column='[Model]' derivation='None' name='[none:Model:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='38605' id='3' name='Race' w='33333' x='74' y='60465' />
+        <zone h='39884' id='5' name='Age' w='33333' x='33185' y='60000' />
+        <zone h='40698' id='6' name='Education' w='32519' x='67259' y='58837' />
+        <zone h='19302' id='7' mode='dropdown' name='Race' param='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:Model:nk]' type-v2='filter' values='database' w='11852' x='1259' y='4302' />
+        <zone h='44302' id='8' name='ClassificationTable' w='39956' x='58724' y='5349' />
+        <zone h='33256' id='9' name='Gender' w='33284' x='0' y='25349' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1500' minheight='1500' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='13' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98140' id='12' param='vert' type-v2='layout-flow' w='98826' x='587' y='930'>
+                <zone fixed-size='280' h='44302' id='8' is-fixed='true' name='ClassificationTable' w='39956' x='58724' y='5349'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='33256' id='9' is-fixed='true' name='Gender' w='33284' x='0' y='25349'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='40698' id='6' is-fixed='true' name='Education' w='32519' x='67259' y='58837'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='39884' id='5' is-fixed='true' name='Age' w='33333' x='33185' y='60000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='19302' id='7' mode='dropdown' name='Race' param='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:Model:nk]' type-v2='filter' values='database' w='11852' x='1259' y='4302'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38605' id='3' is-fixed='true' name='Race' w='33333' x='74' y='60465'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{27A32716-E349-41B1-80AE-F2AF3714D9AD}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='EDU'>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <datasources>
+        <datasource caption='mergedDataFrame' name='federated.0gxte8z0r8dzn6154zg4v0vc5ny1' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0gxte8z0r8dzn6154zg4v0vc5ny1'>
+        <column caption='Model2' datatype='string' name='[Model]' role='dimension' type='nominal' />
+        <column-instance column='[Model]' derivation='None' name='[none:Model:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='62326' id='3' name='Education' w='101077' x='615' y='32674' />
+        <zone h='24651' id='4' mode='radiolist' name='Education' param='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:Model:nk]' type-v2='filter' values='database' w='24615' x='1692' y='2558' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='6' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98140' id='5' param='vert' type-v2='layout-flow' w='97538' x='1231' y='930'>
+                <zone h='24651' id='4' mode='dropdown' name='Education' param='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:Model:nk]' type-v2='filter' values='database' w='24615' x='1692' y='2558'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='62326' id='3' is-fixed='true' name='Education' w='101077' x='615' y='32674'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{276B64CD-FD0B-4E5D-9643-C47E682FD46B}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='GenderBoard'>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <datasources>
+        <datasource caption='mergedDataFrame' name='federated.0gxte8z0r8dzn6154zg4v0vc5ny1' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0gxte8z0r8dzn6154zg4v0vc5ny1'>
+        <column caption='Model2' datatype='string' name='[Model]' role='dimension' type='nominal' />
+        <column-instance column='[Model]' derivation='None' name='[none:Model:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='57674' id='3' name='Gender' w='60000' x='462' y='35581' />
+        <zone h='31512' id='4' mode='radiolist' name='Gender' param='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:Model:nk]' type-v2='filter' values='database' w='30769' x='1077' y='1512' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='6' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98140' id='5' param='vert' type-v2='layout-flow' w='97538' x='1231' y='930'>
+                <zone h='31512' id='4' mode='dropdown' name='Gender' param='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:Model:nk]' type-v2='filter' values='database' w='30769' x='1077' y='1512'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='57674' id='3' is-fixed='true' name='Gender' w='78154' x='462' y='35581'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{8E5D6069-2BB5-405E-A14F-CD52028AE032}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='RaceBoard'>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <datasources>
+        <datasource caption='mergedDataFrame' name='federated.0gxte8z0r8dzn6154zg4v0vc5ny1' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0gxte8z0r8dzn6154zg4v0vc5ny1'>
+        <column caption='Model2' datatype='string' name='[Model]' role='dimension' type='nominal' />
+        <column-instance column='[Model]' derivation='None' name='[none:Model:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='54767' id='3' name='Race' w='95692' x='154' y='39419' />
+        <zone h='24651' id='4' mode='radiolist' name='Race' param='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:Model:nk]' type-v2='filter' values='database' w='24615' x='1077' y='4767' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='6' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98140' id='5' param='vert' type-v2='layout-flow' w='97538' x='1231' y='930'>
+                <zone h='24651' id='4' mode='dropdown' name='Race' param='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:Model:nk]' type-v2='filter' values='database' w='24615' x='1077' y='4767'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='54767' id='3' is-fixed='true' name='Race' w='95692' x='154' y='39419'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{A56DA539-B08D-456D-8CCF-8CE3542876C3}' />
+    </dashboard>
+    <dashboard name='Story 1' type='storyboard'>
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
+            <zone h='4357' id='3' type-v2='title' w='98426' x='787' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='5187' />
+            <zone h='83506' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='15664'>
+              <flipboard active-id='7' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point captured-sheet='EDU' id='3' />
+                  <story-point captured-sheet='RaceBoard' id='4' />
+                  <story-point captured-sheet='AgeBoard' id='6' />
+                  <story-point captured-sheet='GenderBoard' id='7' />
+                  <story-point captured-sheet='ClassBoard' id='8' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{F9CB1575-8613-44AB-9B73-99B8E6122944}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='63'>
+    <window class='worksheet' name='Education'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:education_num:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C28C5E13-83E1-4069-A72E-340B84FB0B5D}' />
+    </window>
+    <window class='worksheet' name='Race'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:race:nk]' type='color' />
+            <card mode='compact' param='[Parameters].[Parameter 1]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{65574ABC-B6A1-4B0A-AC8C-5C30DC4255EC}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Age'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='list' param='[Parameters].[Parameter 1]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5E4D3056-3ADB-4988-9117-69A5A6C438E6}' />
+    </window>
+    <window class='worksheet' name='Gender'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0gxte8z0r8dzn6154zg4v0vc5ny1].[none:sex:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C686084A-7E70-4B80-9414-B5C7123EBF26}' />
+    </window>
+    <window class='worksheet' name='ClassificationTable'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6895C195-D7D1-4A05-B019-5CCFFC99A819}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Age'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='ClassificationTable' />
+        <viewpoint name='Education'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Gender'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Race'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='8' />
+      <simple-id uuid='{0341BDF4-767F-4F50-A3C3-63AC69F1CE84}' />
+    </window>
+    <window class='dashboard' name='EDU'>
+      <viewpoints>
+        <viewpoint name='Education'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{B5F6A17B-2D7D-497F-BFED-B5D495BABD1D}' />
+    </window>
+    <window class='dashboard' name='RaceBoard'>
+      <viewpoints>
+        <viewpoint name='Race' />
+      </viewpoints>
+      <active id='4' />
+      <simple-id uuid='{7DE3BD64-344D-41B3-92D6-676433DC1AA1}' />
+    </window>
+    <window class='dashboard' name='AgeBoard'>
+      <viewpoints>
+        <viewpoint name='Age'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{D2242E84-F037-4B7F-92E1-9EE65B607457}' />
+    </window>
+    <window class='dashboard' name='GenderBoard'>
+      <viewpoints>
+        <viewpoint name='Gender'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{1D60B8DD-22AD-4751-8A40-EB046622E0D8}' />
+    </window>
+    <window class='dashboard' name='ClassBoard'>
+      <viewpoints>
+        <viewpoint name='ClassificationTable' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{6EBA09F9-A013-44CE-9404-3883CA9F7652}' />
+    </window>
+    <window class='dashboard' name='Story 1'>
+      <viewpoints />
+      <active id='5' />
+      <simple-id uuid='{9FA6A7AE-23D7-44EF-B6CF-70F9F8A963C0}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A7276065-289B-4EC8-A884-476441DEC49A}' />
+    </window>
+  </windows>
+</workbook>
