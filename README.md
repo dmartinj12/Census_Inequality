@@ -26,7 +26,7 @@ The Adult Census Income dataset is a rich resource for understanding the socio-e
 
 Before running our models, the data was cleansed:
 
-[Jupyter Notebook Preprocessing](Chris/PreprocessingAnalysis.ipynb)
+* Jupyter Notebook Preprocessing Analysis - [PreprocessingAnalysis.ipynb](Code/PreprocessingAnalysis.ipynb)
 
 Chris/DT_Model.ipynb
 * Analyzed the following dataset features and target:
@@ -56,19 +56,19 @@ Chris/DT_Model.ipynb
 
 In Python, we utilized the following machine learning models to analyze the Adult Census Income dataset:
  
-* K Nearest Neighbor - [PredictiveDawson.ipynb](PredictiveDawson.ipynb)
-* Decision Tree - [DT_Model.ipynb](DT_Model.ipynb)
-* Random Forest - [DT_Model.ipynb](RandomForest.ipynb)
-* Gradient Boosting - [DT_Model.ipynb](GradientBoosting.ipynb)
-* Logistic Regression - [DT_Model.ipynb](LogisticRegression.ipynb)
-* Neural Network - [NeuralNetwork.ipynb](NeuralNetwork.ipynb)
-* Principal Component Analysis - [PCA.ipynb](PCA.ipynb)
+* K Nearest Neighbor - [PredictiveDawson.ipynb](Code/PredictiveDawson.ipynb)
+* Decision Tree - [DT_Model.ipynb](Code/DT_Model.ipynb)
+* Random Forest - [DT_Model.ipynb](Code/RandomForest.ipynb)
+* Gradient Boosting - [DT_Model.ipynb](Code/GradientBoosting.ipynb)
+* Logistic Regression - [DT_Model.ipynb](Code/LogisticRegression.ipynb)
+* Neural Network - [NeuralNetwork.ipynb](Code/NeuralNetwork.ipynb)
+* Principal Component Analysis - [PCA.ipynb](Code/PCA.ipynb)
 
 ## Visualizations
 
 The model prediction results, python visualizations were generated and then were posted to a tableau dashboard.
 
-###[Link to website]()
+### [Link to website](https://public.tableau.com/app/profile/dawson.martin.jones/viz/StartTableau_17337972389220/Story1?publish=yes)
 
 ## Team Members
 * Dawson Martin-Jones
