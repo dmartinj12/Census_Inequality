@@ -62,7 +62,7 @@ In Python, we utilized the following machine learning models to analyze the Adul
 * Gradient Boosting - [DT_Model.ipynb](Code/GradientBoosting.ipynb)
 * Logistic Regression - [DT_Model.ipynb](Code/LogisticRegression.ipynb)
 * Neural Network - [NeuralNetwork.ipynb](Code/NeuralNetwork.ipynb)
-* Principal Component Analysis - [PCA.ipynb](Code/PCA.ipynb)
+* Principal Component Analysis - [PCA.ipynb](Code/pca.ipynb)
 
 ## Visualizations
 
