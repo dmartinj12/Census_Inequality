@@ -2,6 +2,12 @@
 
 ## Final Group Project 
 
+## Team Members
+* Dawson Martin-Jones
+* Daniel Montano
+* Gboyega Adega
+* Christopher Purcell
+
 # Census Inequality - Analyzing and Modeling Census Income
 
 ![alt text](Visualizations/IncomeBy.jpg)
@@ -70,10 +76,9 @@ The model prediction results and python visualizations were generated and then w
 
 The dashboard was published to Tableau Public and can be accessed with the following link:
 
-### [Census Predicting](https://public.tableau.com/app/profile/dawson.martin.jones/viz/Census_Predicting/CensusPredicting?publish=yes)
+[Census Predicting Tableau Dashboard](https://public.tableau.com/app/profile/dawson.martin.jones/viz/Census_Predicting/CensusPredicting?publish=yes)
 
-## Team Members
-* Dawson Martin-Jones
-* Daniel Montano
-* Gboyega Adega
-* Christopher Purcell
+The slide show of the group presentation has been included in the repository, as follows:
+
+[Census Inequality Project Power Point Deck](CensusInequalityProject.pptx)
+
