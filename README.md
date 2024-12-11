@@ -66,9 +66,11 @@ In Python, we utilized the following machine learning models to analyze the Adul
 
 ## Visualizations
 
-The model prediction results, python visualizations were generated and then were posted to a tableau dashboard.
+The model prediction results and python visualizations were generated and then were posted and recreated in a tableau dashboard. 
 
-### [Link to website](https://public.tableau.com/app/profile/dawson.martin.jones/viz/Census_Predicting/CensusPredicting?publish=yes)
+The dashboard was published to Tableau Public and can be accessed with the following link:
+
+### [Census Predicting](https://public.tableau.com/app/profile/dawson.martin.jones/viz/Census_Predicting/CensusPredicting?publish=yes)
 
 ## Team Members
 * Dawson Martin-Jones
