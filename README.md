@@ -58,9 +58,9 @@ In Python, we utilized the following machine learning models to analyze the Adul
  
 * K Nearest Neighbor - [PredictiveDawson.ipynb](Code/PredictiveDawson.ipynb)
 * Decision Tree - [DT_Model.ipynb](Code/DT_Model.ipynb)
-* Random Forest - [DT_Model.ipynb](Code/RandomForest.ipynb)
-* Gradient Boosting - [DT_Model.ipynb](Code/GradientBoosting.ipynb)
-* Logistic Regression - [DT_Model.ipynb](Code/LogisticRegression.ipynb)
+* Random Forest - [RandomForest.ipynb](Code/RandomForest.ipynb)
+* Gradient Boosting - [GradientBoosting.ipynb](Code/GradientBoosting.ipynb)
+* Logistic Regression - [LogisticRegression.ipynb](Code/LogisticRegression.ipynb)
 * Neural Network - [NeuralNetwork.ipynb](Code/NeuralNetwork.ipynb)
 * Principal Component Analysis - [PCA.ipynb](Code/pca.ipynb)
 
